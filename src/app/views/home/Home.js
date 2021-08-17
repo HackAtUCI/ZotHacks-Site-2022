@@ -8,7 +8,9 @@ import { motion } from "framer-motion"
 import ReactTooltip from "react-tooltip"
 
 import { FAQCollapse } from "app/containers"
-import zothacksSucc from "assets/images/zothacksucc.png"
+import clawmachineFront from "assets/images/claw-machine-front.svg"
+import clawmachineBack from "assets/images/claw-machine-back.svg"
+import clawAndAnteater from "assets/images/claw-and-anteater.svg"
 import bubbles from "assets/images/bubbles.png"
 import mentorship from "assets/images/mentorship.png"
 import butterflyOne from "assets/images/butterflyOne.png"
@@ -29,9 +31,9 @@ function Home() {
         <div className="intro-wrapper">
           <div className="title-info">
             <Fade duration={1000} left>
-              <div>
+              <div class="hero-wrapper">
                 <h1>ZotHacks</h1>
-                <h4>November 13-15th</h4>
+                <h4>November 12-14th</h4>
                 <a
                   href="https://docs.google.com/forms/d/1XEgtds8wQVdUE3twqtEiliXkmVtziUWL585culM4-Ps"
                   data-place="bottom"
@@ -50,7 +52,7 @@ function Home() {
                 </a>
               </div>
             </Fade>
-            <div className="zucc-wrapper">
+            {/* <div className="zucc-wrapper">
               <motion.img
                 className="zucc-butterfly"
                 src={butterflyTwo}
@@ -88,6 +90,40 @@ function Home() {
                   ease: "easeInOut",
                 }}
               />
+            </div> */}
+            <div className="claw-machine-wrapper">
+              <motion.img
+                  className="claw-machine"
+                  src={clawmachineBack}
+                  animate={{}}
+                  transition={{
+                    duration: 5,
+                    loop: Infinity,
+                    ease: "easeInOut",
+                  }}
+                />
+                <motion.img
+                  className="claw-machine claw-and-anteater"
+                  src={clawAndAnteater}
+                  animate={{y: [-25, 25, -25]}}
+                  transition={{
+                    duration: 10,
+                    loop: Infinity,
+                    ease: "easeInOut",
+                  }}
+                />
+                <motion.img
+                  className="claw-machine claw-machine-back"
+                  src={clawmachineFront}
+                  animate={{}}
+                  transition={{
+                    duration: 5,
+                    loop: Infinity,
+                    ease: "easeInOut",
+                  }}
+                />
+
+                
             </div>
           </div>
         </div>

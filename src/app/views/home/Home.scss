@@ -28,7 +28,7 @@
     text-align: left;
     color: white;
     box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.1);
-    background: linear-gradient(to right, $blueGreenBackground, $yellowGreenBackground);
+    background: linear-gradient(to right, $lightPurpleBackground, $darkPurpleBackground);
 
     .intro-wrapper {
       display: flex;
@@ -92,6 +92,23 @@
           }
         }
 
+        .zucc-wrapper {
+          height: 300px !important;
+          margin-bottom: 30px;
+
+          .zucc-shadow {
+            width: 80px !important;
+            height: 15px !important;
+            margin-left: 15px !important;
+            opacity: .6;
+          }
+
+          .zucc-butterfly {
+            width: 50px !important;
+            height: 50px !important;
+          }
+        }
+
         img {
           margin-left: 0rem !important;
           margin-top: 1rem;
@@ -109,31 +126,59 @@
         }
       }
 
-      .zucc-wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        position: relative;
-        height: 500px;
+      // .zucc-wrapper {
+      //   display: flex;
+      //   flex-direction: column;
+      //   align-items: center;
+      //   justify-content: space-between;
+      //   position: relative;
+      //   height: 500px;
 
-        .zucc-butterfly {
-          position: absolute;
-          width: 100px;
-          height: 100px;
+      //   .zucc-butterfly {
+      //     position: absolute;
+      //     width: 100px;
+      //     height: 100px;
+      //     z-index: 10;
+      //     right: 45px;
+      //     top: 25px;
+      //   }
+
+      //   .zucc-shadow {
+      //     width: 150px;
+      //     height: 25px;
+      //     border-radius: 50%;
+      //     background-color: #2e2e2e;
+      //     opacity: .8;
+      //     margin-left: 60px;
+      //   }
+      // }
+      
+      .hero-wrapper {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+      }
+
+      .claw-machine-wrapper {
+          position: relative;
+          height: 500px;
+          padding: 0 10%;
+      }
+
+      .claw-machine {
+          height: 500px;
+      }
+      .claw-machine-back {
           z-index: 10;
-          right: 45px;
-          top: 25px;
-        }
+          position: absolute;
+      }
 
-        .zucc-shadow {
-          width: 150px;
-          height: 25px;
-          border-radius: 50%;
-          background-color: #2e2e2e;
-          opacity: .8;
-          margin-left: 60px;
-        }
+      .claw-and-anteater {
+          z-index: 2;
+          position: absolute;
+          height: 500px;
+          padding: 30px 30px;
       }
   
       .succulent {
