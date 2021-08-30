@@ -5,12 +5,12 @@ import "./App.scss"
 
 import { Home, Schedule, StarterPacks } from "app/views"
 
-import { Nav } from "app/components"
+import { NavigationBar, Footer } from "app/components"
 
 function App() {
   return (
     <div className="App">
-      <Nav history={history}></Nav>
+      <NavigationBar history={history}></NavigationBar>
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/schedule" component={Schedule} />
@@ -21,6 +21,7 @@ function App() {
           return null;
         }}/>
       </Switch>
+      <Footer/>
     </div>
   )
 }

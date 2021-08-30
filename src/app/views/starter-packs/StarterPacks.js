@@ -23,7 +23,7 @@ function StarterPacks() {
           <li>
             <a
               href="https://github.com/hackuci/zothacks-2020-frontend"
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
             >
               ZotHacks-2020-Frontend
             </a>
@@ -35,7 +35,7 @@ function StarterPacks() {
           <li>
             <a
               href="https://github.com/hackuci/zothacks-2020-backend"
-              target="_blank"
+              target="_blank"  rel="noopener noreferrer"
             >
               ZotHacks-2020-Backend
             </a>
@@ -60,7 +60,7 @@ function StarterPacks() {
           <li>
             <a
               href="https://developer.spotify.com/documentation/web-api/"
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
             >
               Spotify Web API Reference
             </a>
@@ -72,7 +72,7 @@ function StarterPacks() {
           <li>
             <a
               href="https://developer.twitter.com/en/docs/twitter-api"
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
             >
               Twitter Web API Reference
             </a>
@@ -85,7 +85,7 @@ function StarterPacks() {
         </p>
         <ul>
           <li>
-            <a href="https://cloud.google.com/apis" target="_blank">
+            <a href="https://cloud.google.com/apis" target="_blank"  rel="noopener noreferrer">
               Google Cloud API Reference
             </a>
           </li>
@@ -104,6 +104,7 @@ function StarterPacks() {
             <a
               href="https://flask.palletsprojects.com/en/1.1.x/api/"
               target="_blank"
+              rel="noopener noreferrer"
             >
               Flask API Reference
             </a>
@@ -112,6 +113,7 @@ function StarterPacks() {
             <a
               href="https://github.com/hackuci/zothacks-2020-backend"
               target="_blank"
+              rel="noopener noreferrer"
             >
               Flask Backend Workshop Template
             </a>

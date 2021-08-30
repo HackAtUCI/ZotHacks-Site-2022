@@ -1,5 +1,9 @@
 @import "globals/zothacks-styles.scss";
 
+body {
+  overflow-x: hidden;
+}
+
 .App {
   text-align: center;
   min-height: 100vh;

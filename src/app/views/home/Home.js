@@ -6,6 +6,7 @@ import { Button } from "react-bootstrap"
 import Fade from "react-reveal/Fade"
 import { motion } from "framer-motion"
 import ReactTooltip from "react-tooltip"
+import { Blinkers } from "app/components";
 
 import { FAQCollapse } from "app/containers"
 import zothacksSucc from "assets/images/zothacksucc.png"
@@ -25,6 +26,7 @@ function Home() {
   return (
     <div className="Home">
       <ReactTooltip />
+      <Blinkers blinkerCount={50}/>
       <section id="intro">
         <div className="intro-wrapper">
           <div className="title-info">
