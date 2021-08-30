@@ -15,13 +15,14 @@ import bubbles from "assets/images/bubbles.png"
 import mentorship from "assets/images/mentorship.png"
 import butterflyOne from "assets/images/butterflyOne.png"
 import butterflyTwo from "assets/images/butterflyTwo.png"
-import sinWaveOne from "assets/images/white_sinewave_1.png"
-import sinWaveTwo from "assets/images/white_sinewave_2.png"
+import pixelWaveUp from "assets/images/pixel_wave_up.png"
+import pixelWaveDown from "assets/images/pixel_wave_down.png"
 import digitalOcean from "assets/images/sponsors/digitalOcean.png"
 import voiceflow from "assets/images/sponsors/voiceflow.png"
 import danaher from "assets/images/sponsors/danaher.png"
 import zillow from "assets/images/sponsors/zillow.png"
 import github from "assets/images/sponsors/github.png"
+import zothacksLogo from "assets/images/logos/zothacks_white.svg"
 
 function Home() {
   return (
@@ -32,7 +33,7 @@ function Home() {
           <div className="title-info">
             <Fade duration={1000} left>
               <div class="hero-wrapper">
-                <h1>ZotHacks</h1>
+                <h1 className="glow">ZotHacks</h1>
                 <h4>November 12-14th</h4>
                 <a
                   href="https://docs.google.com/forms/d/1XEgtds8wQVdUE3twqtEiliXkmVtziUWL585culM4-Ps"
@@ -127,7 +128,7 @@ function Home() {
             </div>
           </div>
         </div>
-        <img className="sin-wave sin-wave--one" src={sinWaveOne} />
+        <img className="wave-border sin-wave--one" src={pixelWaveUp} />
       </section>
       <section id="info">
         <img src={bubbles} />
@@ -148,8 +149,9 @@ function Home() {
       <section id="mentors">
         <img className="mentors-butterfly --one" src={butterflyOne} />
         <div>
-          <img src={mentorship} />
+          <img className="mentor-zothacks-logo" src={mentorship} />
           <div className="mentor-information">
+            <img src={zothacksLogo} />
             <h3>Interested in becoming a mentor?</h3>
             <p>
               Have hackathon experience and would love to share it with new
@@ -192,7 +194,7 @@ function Home() {
         </Fade>
       </section>
       <section id="faq">
-        <img className="sin-wave sin-wave--two" src={sinWaveTwo} />
+        <img className="wave-border sin-wave--two" src={pixelWaveDown} />
         <Fade duration={1000}>
           <h2>FAQ</h2>
           <div>
