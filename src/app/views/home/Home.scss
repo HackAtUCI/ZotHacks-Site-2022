@@ -19,10 +19,58 @@
     width: 100vw;
   }
 
+  .banner {
+    position: absolute;
+    width: 100vw;
+
+    @media screen and (max-width: $break-small) {
+      display: hidden;
+    }
+
+    @media screen and (max-width: $break-medium) {
+      margin-top: 5rem;
+    }
+  }
+
   .glow {
     color: #fff;
     text-align: center;
     text-shadow: 0 0 50px #fff;
+  }
+
+  .card {
+    color: white;
+    width: 60vw;
+    background: linear-gradient(to right, $lightPurpleBackground, $darkPurpleBackground);
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 30px 40px rgba(205, 106, 215, 0.54);
+    z-index: 1;
+
+    @media screen and (max-width: $break-small) {
+      width: 80vw;
+      text-align: center;
+      padding: 1.7rem;
+      padding-top: 2rem;
+    }
+
+    @media screen and (max-width: $break-medium) {
+      margin-top: 5rem;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 3rem;
+      // width: 80vw;
+      
+      @media screen and (max-width: $break-small) {
+        font-size: 25px;
+      }
+    }
+  }
+
+  .card-text {
+    text-align: left;
   }
 
   #intro {
@@ -133,33 +181,6 @@
         }
       }
 
-      // .zucc-wrapper {
-      //   display: flex;
-      //   flex-direction: column;
-      //   align-items: center;
-      //   justify-content: space-between;
-      //   position: relative;
-      //   height: 500px;
-
-      //   .zucc-butterfly {
-      //     position: absolute;
-      //     width: 100px;
-      //     height: 100px;
-      //     z-index: 10;
-      //     right: 45px;
-      //     top: 25px;
-      //   }
-
-      //   .zucc-shadow {
-      //     width: 150px;
-      //     height: 25px;
-      //     border-radius: 50%;
-      //     background-color: #2e2e2e;
-      //     opacity: .8;
-      //     margin-left: 60px;
-      //   }
-      // }
-      
       .hero-wrapper {
           display: flex;
           flex-direction: column;
@@ -213,61 +234,20 @@
   }
 
   #info {
-    margin-top: 5rem;
+    margin: 7rem 0 0 0;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     position: relative;
 
-    img {
-      position: absolute;
-      width: 100vw;
-
-      @media screen and (max-width: $break-small) {
-        display: hidden;
-      }
-
-      @media screen and (max-width: $break-medium) {
-        margin-top: 5rem;
-      }
-    }
-
-    div {
-      color: white;
-      text-align: left;
-      width: 60vw;
-      background: linear-gradient(to right, $lightPurpleBackground, $darkPurpleBackground);
-      padding: 5rem;
-      border-radius: 1rem;
-      box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-      z-index: 1;
-
-      @media screen and (max-width: $break-small) {
-        width: 80vw;
-        text-align: center;
-        padding: 1.7rem;
-        padding-top: 2rem;
-      }
-
-      @media screen and (max-width: $break-medium) {
-        margin-top: 5rem;
-      }
-
-      h2 {
-        text-align: center;
-        font-size: 3rem;
-        // width: 80vw;
-        
-        @media screen and (max-width: $break-small) {
-          font-size: 25px;
-        }
-      }
+    .zothacks-logo {
+      width: 100px;
+      margin: 0 auto 2rem auto;
     }
   }
 
   #mentors {
-    margin-top: 5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -280,9 +260,9 @@
     }
 
     div {
-      width: 70vw;
       display: flex;
       flex-direction: row;
+      justify-content: space-between;
 
       @media screen and (max-width: $break-medium) {
         flex-direction: column;
@@ -290,37 +270,31 @@
       }
 
       img {
-        width: 300px;
-        height: 300px;
+        width: 18vw;
+        height: 18vw;
         border-radius: 1rem;
+        margin-right: 1rem;
 
         @media screen and (max-width: $break-medium) {
-          width: 240px;
-          height: 240px;
-          margin-top: 12rem;
+          width: 15rem;
+          height: 15rem;
+          margin-right: 0;
         }
       }
 
       .mentor-information { 
-        margin-left: 5rem;
+        margin-left: 1.5rem;
         display: flex;
         justify-content: center;
         flex-direction: column;
         text-align: left;
 
         @media screen and (max-width: $break-medium) {
-          margin-top: 2rem;
-          margin-left: 0rem;
-          margin-bottom: 5rem;
+          margin: 2rem 0 1rem 0;
           text-align: center;
           align-items: center;
         }
       }
-    }
-
-    .mentor-zothacks-logo {
-      width: 100px;
-      height: 100px;
     }
 
     .mentors-butterfly {
@@ -332,12 +306,13 @@
       width: 120px;
       height: 120px;
       margin-right: auto;
-      margin-left: 8vw;
-      margin-bottom: 2rem;
+      margin-left: 8.5vw;
+      transform: translateY(190px);
 
       @media screen and (max-width: $break-medium) {
         position: absolute;
-        top: 21px;  
+        top: 23px;
+        left: 21vw;
         margin: 0;
         transform: translateX(-50px);
       }
@@ -345,14 +320,15 @@
 
     .--two {
       margin-left: auto;
-      margin-right: 12vw;
-      transform: translateY(-40px);
+      margin-right: 8vw;
+      transform: translateY(-150px) scale(1.5);
 
       @media screen and (max-width: $break-medium) {
         position: absolute;
-        top: -18px;
+        top: 630px;
+        right: 13vw; 
         margin: 0;
-        transform: translateX(40px)
+        transform: translateX(40px);
       }
     }
   }
@@ -362,24 +338,33 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-bottom: 2rem;
+    margin-bottom: 7rem;
+    text-align: left;
 
     & > h2 {
       margin-top: 2rem;
     }
 
+    .card {
+      background: linear-gradient(to right, #76A9E5, #466FD9);
+    }
+
+    .sponsor-tier {
+      border-bottom: 2px solid white;
+      padding: 10px 0;
+    }
+
     .sponsor-logo-wrapper {
-      width: 70vw;
+      width: 100%;
       display: flex;
       align-items: center;
       justify-content: space-evenly;
       flex-wrap: wrap;
-      margin-top: 4rem;
-      margin-bottom: 4rem;
+      margin: 2rem auto;
 
       img {
-        margin: 2rem;
-        width: 200px;
+        margin: 0m 1rem;
+        width: 100px;
       }
     }
   }
