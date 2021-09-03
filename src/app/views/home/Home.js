@@ -31,7 +31,7 @@ function Home() {
   return (
     <div className="Home">
       <ReactTooltip />
-      <Blinkers blinkerCount={50}/>
+      <Blinkers blinkerCount={40}/>
       <section id="intro">
         <div className="intro-wrapper">
           <div className="title-info">
@@ -183,11 +183,7 @@ function Home() {
         </Fade>
       </section>
       <section id="credits">
-        <p>
-          Made with{" "}
-          <a href="https://en.wikipedia.org/wiki/Anteater">&hearts;</a> in
-          Irvine, CA
-        </p>
+
       </section>
     </div>
   )

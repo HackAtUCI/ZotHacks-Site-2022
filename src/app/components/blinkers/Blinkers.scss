@@ -1,12 +1,12 @@
 // Quantity should be the same in PUG
-$quantity: 30;
+$quantity: 40;
 
 .firefly {
   position: fixed;
-  left: 50%;
+  left: 40%;
   top: 50%;
-  width: 0.4vw;
-  height: 0.4vw;
+  width: 0.8vw;
+  height: 0.8vw;
   margin: -0.2vw 0 0 9.8vw;
   animation: ease 200s alternate infinite;
   pointer-events: none;
