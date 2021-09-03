@@ -1,2 +1,3 @@
-export { default as Nav } from "./nav/Nav"
-export { default as LeafRain } from "./leaf-rain/LeafRain"
+export { default as NavigationBar } from "./nav/Nav";
+export { default as Footer } from "./footer/Footer";
+export { default as Blinkers } from "./blinkers/Blinkers";
