@@ -1,75 +1,68 @@
-import React from "react";
-import './Schedule.scss';
+import React from "react"
+import "./Schedule.scss"
 
-import { motion } from "framer-motion"
-
-import butterflyOne from "assets/images/butterflyOne.png"
-import butterflyTwo from "assets/images/butterflyTwo.png"
-import { scheduleData } from "../../../assets/data/schedule-data";
-import { LeafRain } from "../../components";
+import { scheduleData } from "../../../assets/data/schedule-data"
+import Countdown from "react-countdown"
+import pixels from "../../../assets/images/pixels.svg"
 
 function Schedule() {
+  let hackingBegins = "05 Nov 2021 21:00:00 PST"
+  let devpostSubmission = "07 Nov 2021 10:00:00 PST"
+
+  function generateCountdown() {
+    if (Date.parse(hackingBegins) - Date.now() > 0) {
+      return (
+        <section id="schedule-block">
+          <div className="schedule-countdown">
+            <Countdown date={hackingBegins} />
+          </div>
+          <div className="schedule-countdown-text">
+            <span> Until Hacking Begins</span>
+          </div>
+        </section>
+      )
+    } else {
+      return (
+        <section id="schedule-block">
+          <div className="schedule-countdown">
+            <Countdown date={devpostSubmission} />
+          </div>
+          <div className="schedule-countdown-text">
+            <span> Until Devpost Submission Closes</span>
+          </div>
+        </section>
+      )
+    }
+  }
+
   return (
     <div className="Schedule">
-      <LeafRain/>
-      <section id="schedule-block">
-        <div className="schedule-countdown">
-          <motion.img 
-            className="mentors-butterfly --one" 
-            src={butterflyOne}
-            animate={{
-              rotate: [1,3,2,5,1,2,3,1],
-            }}
-            transition={{
-              duration: 1,
-              loop: Infinity,
-              ease: "easeInOut",
-              repeatDelay: 5
-            }}
-          />
-          <h2>Schedule</h2>
-          <motion.img 
-            className="mentors-butterfly --two" 
-            src={butterflyTwo}
-            animate={{
-              rotate: [1,3,2,5,1,2,3,1],
-            }}
-            transition={{
-              duration: 1,
-              loop: Infinity,
-              ease: "easeInOut",
-              repeatDelay: 5,
-              delay: 3,
-            }}
-          />
+      <div className="overlaying-div">
+        {generateCountdown()}
+        <div className="schedule-pixels">
+          <img src={pixels} alt="pixels" />
         </div>
-      </section>
+      </div>
+
       <section id="schedule-cards">
-        {scheduleData.map(function(schedule, i) {
+        {scheduleData.map(function (schedule, i) {
           return (
-          <div className="schedule-card" key={i}>
-            <h3>{schedule.day}</h3>
-            {schedule.events.map(function(event, j) {
-              return (
-              <div className="schedule-card-event">
-                <h4>
-                  {event.name}
-                </h4>
-                <p>
-                  {event.time}
-                </p>
-              </div>
-              );
-            })}
-          </div>
-          );
+            <div className="schedule-card" key={i}>
+              <h3>{schedule.day}</h3>
+              {schedule.events.map(function (event, j) {
+                return (
+                  <div className="schedule-card-event">
+                    <span className="left-text">{event.name}</span>
+                    <span className="right-text">{event.time}</span>
+                  </div>
+                )
+              })}
+            </div>
+          )
         })}
       </section>
-      <section id="credits">
-        <p>Made with <a href="https://en.wikipedia.org/wiki/Anteater">&hearts;</a> in Irvine, CA</p>
-      </section>
     </div>
-  );
+  )
 }
 
-export default Schedule;
+export default Schedule

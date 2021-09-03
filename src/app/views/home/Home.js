@@ -9,18 +9,23 @@ import ReactTooltip from "react-tooltip"
 import { Blinkers } from "app/components";
 
 import { FAQCollapse } from "app/containers"
-import zothacksSucc from "assets/images/zothacksucc.png"
-import bubbles from "assets/images/bubbles.png"
+import clawmachineFront from "assets/images/claw-machine-front.svg"
+import clawmachineBack from "assets/images/claw-machine-back.svg"
+import clawAndAnteater from "assets/images/claw-and-anteater.svg"
+import starBanner from "assets/images/starBanner.png"
+import ticketBanner from "assets/images/ticketBanner.png"
 import mentorship from "assets/images/mentorship.png"
-import butterflyOne from "assets/images/butterflyOne.png"
-import butterflyTwo from "assets/images/butterflyTwo.png"
-import sinWaveOne from "assets/images/white_sinewave_1.png"
-import sinWaveTwo from "assets/images/white_sinewave_2.png"
+import planetOne from "assets/images/planetOne.png"
+import planetTwo from "assets/images/planetTwo.png"
+import pixelWaveUp from "assets/images/pixel_wave_up.png"
+import pixelWaveDown from "assets/images/pixel_wave_down.png"
+import applyButton from "assets/images/applyButton.png"
 import digitalOcean from "assets/images/sponsors/digitalOcean.png"
 import voiceflow from "assets/images/sponsors/voiceflow.png"
 import danaher from "assets/images/sponsors/danaher.png"
 import zillow from "assets/images/sponsors/zillow.png"
 import github from "assets/images/sponsors/github.png"
+import zothacksLogo from "assets/images/zothacks_white.svg"
 
 function Home() {
   return (
@@ -31,76 +36,74 @@ function Home() {
         <div className="intro-wrapper">
           <div className="title-info">
             <Fade duration={1000} left>
-              <div>
-                <h1>ZotHacks</h1>
-                <h4>November 13-15th</h4>
+              <div class="hero-wrapper">
+                <h1 className="glow">ZotHacks</h1>
+                <h4>November 12-14th</h4>
                 <a
+                  style={{
+                    display: "block",
+                    marginRight: "auto"
+                  }}
                   href="https://docs.google.com/forms/d/1XEgtds8wQVdUE3twqtEiliXkmVtziUWL585culM4-Ps"
                   data-place="bottom"
                   data-tip="Make sure to use your UCI email!"
                 >
-                  <Button
-                    style={{
-                      borderRadius: "50px",
-                      width: "100px",
-                      backgroundColor: "#F95C6F",
-                      height: "40px",
-                    }}
+                  <img
+                  type="image"
+                  style={{
+                    height: "70px",
+                    marginTop: "0.5rem"
+                  }}
+                    src={applyButton}
                   >
-                    Apply
-                  </Button>
+                  </img>
                 </a>
               </div>
             </Fade>
-            <div className="zucc-wrapper">
+            
+            <div className="claw-machine-wrapper">
               <motion.img
-                className="zucc-butterfly"
-                src={butterflyTwo}
-                animate={{
-                  rotate: [1, 3, 2, 5, 1, 2, 3, 1],
-                  y: [20, 10, 20],
-                }}
-                transition={{
-                  duration: 5,
-                  loop: Infinity,
-                  ease: "easeInOut",
-                }}
-              />
-              <motion.img
-                className="succulent"
-                src={zothacksSucc}
-                animate={{
-                  y: [20, 10, 20],
-                }}
-                transition={{
-                  duration: 5,
-                  loop: Infinity,
-                  ease: "easeInOut",
-                }}
-              />
-              <motion.div
-                className="zucc-shadow"
-                animate={{
-                  scale: [1.3, 1, 1.3],
-                  y: [-15, -15, -15],
-                }}
-                transition={{
-                  duration: 5,
-                  loop: Infinity,
-                  ease: "easeInOut",
-                }}
-              />
+                  className="claw-machine"
+                  src={clawmachineBack}
+                  animate={{}}
+                  transition={{
+                    duration: 5,
+                    loop: Infinity,
+                    ease: "easeInOut",
+                  }}
+                />
+                <motion.img
+                  className="claw-machine claw-and-anteater"
+                  src={clawAndAnteater}
+                  animate={{y: [-25, 25, -25]}}
+                  transition={{
+                    duration: 10,
+                    loop: Infinity,
+                    ease: "easeInOut",
+                  }}
+                />
+                <motion.img
+                  className="claw-machine claw-machine-back"
+                  src={clawmachineFront}
+                  animate={{}}
+                  transition={{
+                    duration: 5,
+                    loop: Infinity,
+                    ease: "easeInOut",
+                  }}
+                />   
             </div>
           </div>
         </div>
-        <img className="sin-wave sin-wave--one" src={sinWaveOne} />
+        <img className="wave-border sin-wave--one" src={pixelWaveUp} />
       </section>
       <section id="info">
-        <img src={bubbles} />
-        <div>
+        <img className="banner" src={starBanner} />
+        <div className="card">
           <Fade duration={1000}>
+            <img className="zothacks-logo" src={zothacksLogo} />
             <h2>What is ZotHacks?</h2>
-            <p>
+            <p className="card-text">
               ZotHacks is a beginner-friendly hackathon where students with
               minimal computer science experience will learn to build and build
               their first CS project. Through ZotHacks, we introduce these
@@ -112,53 +115,58 @@ function Home() {
         </div>
       </section>
       <section id="mentors">
-        <img className="mentors-butterfly --one" src={butterflyOne} />
-        <div>
-          <img src={mentorship} />
-          <div className="mentor-information">
-            <h3>Interested in becoming a mentor?</h3>
-            <p>
-              Have hackathon experience and would love to share it with new
-              developers? Apply to be a mentor for ZotHacks 2020!
-            </p>
-            <a
-              href="https://docs.google.com/forms/d/1hCRUwgHL485K8O_OXVOohpAU0U_jqqpbHctsu6i4mdk"
-              data-place="bottom"
-              data-tip="Make sure to use your UCI email!"
-            >
-              <Button
-                style={{
-                  borderRadius: "50px",
-                  width: "200px",
-                  backgroundColor: "#F95C6F",
-                  height: "40px",
-                }}
+        <img className="mentors-butterfly --one" src={planetOne} />
+        <div className="card">
+          <Fade duration={1000}>
+            <img src={mentorship} />
+            <div className="mentor-information card-text">
+              <h3>Interested in becoming a mentor?</h3>
+              <p className="">
+                Have hackathon experience and would love to share it with new
+                developers? Apply to be a mentor for ZotHacks 2021!
+              </p>
+              <a
+                href="https://docs.google.com/forms/d/1hCRUwgHL485K8O_OXVOohpAU0U_jqqpbHctsu6i4mdk"
+                data-place="bottom"
+                data-tip="Make sure to use your UCI email!"
               >
-                Apply to be a Mentor
-              </Button>
-            </a>
-          </div>
+                <Button
+                  style={{
+                    borderRadius: "50px",
+                    width: "200px",
+                    backgroundColor: "#F95C6F",
+                    height: "40px",
+                  }}
+                >
+                  Apply to be a Mentor
+                </Button>
+              </a>
+            </div>
+          </Fade>
         </div>
-        <img className="mentors-butterfly --two" src={butterflyTwo} />
+        <img className="mentors-butterfly --two" src={planetTwo} />
       </section>
       <section id="sponsors">
-        <Fade duration={1000}>
-          <h2>Sponsors</h2>
-          <h3>Gold Sponsors</h3>
-          <div className="sponsor-logo-wrapper">
-            <img src={danaher}></img>
-            <img src={zillow}></img>
-            <img src={github}></img>
-          </div>
-          <h3>Silver Sponsors</h3>
-          <div className="sponsor-logo-wrapper">
-            <img src={digitalOcean}></img>
-            <img src={voiceflow}></img>
-          </div>
-        </Fade>
+        <img className="banner" src={ticketBanner} />
+        <div className="card">
+          <Fade duration={1000}>
+            <h2>Sponsors</h2>
+            <h3 className="sponsor-tier">Gold Sponsors</h3>
+            <div className="sponsor-logo-wrapper">
+              <img src={zothacksLogo}></img>
+              <img src={zothacksLogo}></img>
+              <img src={zothacksLogo}></img>
+            </div>
+            <h3 className="sponsor-tier">Silver Sponsors</h3>
+            <div className="sponsor-logo-wrapper">
+              <img src={zothacksLogo}></img>
+              <img src={zothacksLogo}></img>
+            </div>
+          </Fade>
+        </div>
       </section>
       <section id="faq">
-        <img className="sin-wave sin-wave--two" src={sinWaveTwo} />
+        <img className="wave-border sin-wave--two" src={pixelWaveDown} />
         <Fade duration={1000}>
           <h2>FAQ</h2>
           <div>

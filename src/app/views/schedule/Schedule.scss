@@ -1,10 +1,11 @@
 @import "globals/zothacks-styles.scss";
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&display=swap");
 
 .Schedule {
   text-align: center;
   min-height: 100vh;
   min-width: 100vw;
-  background: linear-gradient(to right, $blueGreenBackground, $yellowGreenBackground);
+  background: linear-gradient(270deg, #191970 0%, #a23fd1 100%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,88 +21,21 @@
     }
   }
 
-  #intro {
-    height: 90vh;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: left;
-    color: white;
-
-    .schedule-nav {
-      position: absolute;
-      top: 0;
-      right: 0;
-      display: flex;
-      justify-content: flex-end;
-
-      a {
-        margin-right: 0 !important;
-        text-decoration: none;
-        display: flex;
-        align-items: center;
-
-        h5 {
-          margin-bottom: 0;
-        }
-      }
-    }
-
-    .schedule-button {
-      margin: 2em;
-      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-    }
-
-    .title-info {
-      display: flex;
-      flex-direction: row;
-      width: 60vw;
-
-      @media screen and (max-width: $break-medium) {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-
-        button {
-          align-self: center;
-        }
-        
-        img {
-          margin-right: 0 !important;
-        }
-
-        h1 {
-          font-size: 60px;
-        }
-      }
-  
-      img {
-        width: 250px;
-        height: 250px;
-        margin-right: 2em;
-      }
-
-      div {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
-        button {
-          width: 100px;
-        }
-      }
-
-      h1 {
-        margin-bottom: .1em !important;
-      }
-    }
-  }
-
   #schedule-nav {
     width: 100vh;
     position: relative;
+  }
+
+  .schedule-pixels {
+    margin-top: -11.5vh;
+
+    img {
+      width: 100%;
+    }
+
+    @media screen and (max-width: $break-medium) {
+      margin-top: 0;
+    }
   }
 
   #schedule-block {
@@ -109,85 +43,55 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    top: 100px;
+    justify-content: center;
+    align-items: center;
+    color: white;
 
     .schedule-countdown {
-      top: 50px;
-      margin-bottom: 50px;
-      height: 25vh;
-      width: 100vw;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: white;
       text-align: left;
       flex-direction: column;
-      position: absolute;
+      font-family: "Chakra Petch", sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 9.5vw;
+      height: 11.5vw;
 
       @media screen and (max-width: $break-medium) {
         margin-bottom: 0 !important;
-        height: 12vh;
       }
+    }
 
-      .mentors-butterfly {
-        width: 80px;
-        height: 80px;
-        position: relative;
+    .schedule-countdown-text {
+      font-family: "Chakra Petch", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.5vw;
 
-        @media screen and (max-width: $break-medium) {
-          width: 60px;
-          height: 60px;
-        }
-      }
-    
-      .--one {
-        width: 100px;
-        height: 100px;
-        margin-bottom: 2rem;
-        top: 116px;
-        left: -220px;
-
-        @media screen and (max-width: $break-medium) {
-          top: 200px;
-          left: -40px;
-        }
-      }
-    
-      .--two {
-        top: -104px;
-        left: 207px;
-
-        @media screen and (max-width: $break-medium) {
-          top: 60px;
-          left: 40px;
-        }
+      @media screen and (max-width: $break-medium) {
+        font-size: 3vw;
       }
     }
   }
 
   #schedule-cards {
-    margin-top: 350px;
-    width: 70vw;
+    margin-top: 190px;
     height: 100%;
-    display: flex;
-    flex-direction: row;
     justify-content: center;
+    align-items: center;
+    width: 80%;
 
+    background: rgba(16, 0, 29, 0.57);
+    margin-bottom: 80px;
+    border-radius: 10px;
     @media screen and (max-width: $break-medium) {
-      flex-direction: column;
       align-items: center;
-      width: 100vw;
-      margin-top: 320px;
     }
 
     .schedule-card {
-      height: fit-content;
-      width: 400px;
       padding: 2rem;
-      box-shadow: 0 25px 50px -12px rgba(0,0,0,.25);
-      background-color: $white;
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
       margin-left: 2rem;
       margin-right: 2rem;
 
@@ -195,43 +99,41 @@
         margin-left: 0;
         margin-right: 0;
         margin-bottom: 2rem;
-        width: 80vw;
       }
 
       h3 {
-        color: $blueGreenBackground;
+        color: $white;
+        font-family: "Chakra Petch", sans-serif;
+        font-style: normal;
+        font-weight: bold;
       }
 
       .schedule-card-event {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        text-align: left;
+        float: left;
+        padding-bottom: 28px;
 
-        h4 {
-          font-size: 20px;
-          color: black;
+        @media screen and (max-width: $break-medium) {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          text-align: left;
         }
-  
-        p {
-          color: $pink;
+
+        .left-text {
+          float: left;
+          font-family: "Chakra Petch", sans-serif;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 28px;
+          color: $white;
+        }
+
+        .right-text {
+          color: #ed96ca;
           font-size: 20px;
+          float: right;
         }
       }
-    }
-  }
-
-  #credits {
-    color: $white;
-    height: 15vh;
-    width: 100vw;
-    margin-top: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    p {
-      margin: 0;
     }
   }
 }
