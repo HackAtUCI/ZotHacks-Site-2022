@@ -26,7 +26,14 @@
 @media screen and (max-width: 440px) {
     .footer {
       padding-bottom: 30px;
+      margin-bottom: 0 !important;
     }
+
+  .footer-socials {
+    & a {
+      margin: 0 10px;
+    }
+  }
 
     .footer p {
       font-size: 14px;
