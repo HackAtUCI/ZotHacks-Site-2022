@@ -38,7 +38,7 @@ function Home() {
             <Fade duration={1000} left>
               <div className="hero-wrapper">
                 <h1 className="glow">ZotHacks</h1>
-                <h4>November 12-14th</h4>
+                <h4>November 20-21, 2021</h4>
                 <a
                   className="apply-button-wrapper"
                   href="https://docs.google.com/forms/d/1XEgtds8wQVdUE3twqtEiliXkmVtziUWL585culM4-Ps"
@@ -118,7 +118,7 @@ function Home() {
           <Fade duration={1000}>
             <img src={mentorship} />
             <div className="mentor-information card-text">
-              <h2>Interested in becoming a mentor?</h2>
+              <h2>Interested in <br/> becoming a mentor?</h2>
               <p className="">
                 Have hackathon experience and would love to share it with new
                 developers? Apply to be a mentor for ZotHacks 2021!
