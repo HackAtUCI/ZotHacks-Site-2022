@@ -25,34 +25,32 @@ import voiceflow from "assets/images/sponsors/voiceflow.png"
 import danaher from "assets/images/sponsors/danaher.png"
 import zillow from "assets/images/sponsors/zillow.png"
 import github from "assets/images/sponsors/github.png"
-import zothacksLogo from "assets/images/zothacks_white.svg"
+import zothacksLogo from "assets/images/zothacks_logo_rya 2.svg"
 
 function Home() {
   return (
     <div className="Home">
-      <ReactTooltip />
       <Blinkers blinkerCount={40}/>
+     <ReactTooltip />
       <section id="intro">
         <div className="intro-wrapper">
           <div className="title-info">
             <Fade duration={1000} left>
-              <div class="hero-wrapper">
+              <div className="hero-wrapper">
                 <h1 className="glow">ZotHacks</h1>
-                <h4>November 12-14th</h4>
+                <h4>November 20-21, 2021</h4>
                 <a
-                  style={{
-                    display: "block",
-                    marginRight: "auto"
-                  }}
+                  className="apply-button-wrapper"
                   href="https://docs.google.com/forms/d/1XEgtds8wQVdUE3twqtEiliXkmVtziUWL585culM4-Ps"
                   data-place="bottom"
                   data-tip="Make sure to use your UCI email!"
                 >
                   <img
                   type="image"
+                  className="apply-button"
                   style={{
                     height: "70px",
-                    marginTop: "0.5rem"
+                    marginTop: "0.5rem",
                   }}
                     src={applyButton}
                   >
@@ -98,7 +96,7 @@ function Home() {
         <img className="wave-border sin-wave--one" src={pixelWaveUp} />
       </section>
       <section id="info">
-        <img className="banner" src={starBanner} />
+      <img className="banner star-banner" src={starBanner} />
         <div className="card">
           <Fade duration={1000}>
             <img className="zothacks-logo" src={zothacksLogo} />
@@ -120,25 +118,28 @@ function Home() {
           <Fade duration={1000}>
             <img src={mentorship} />
             <div className="mentor-information card-text">
-              <h3>Interested in becoming a mentor?</h3>
+              <h2>Interested in <br/> becoming a mentor?</h2>
               <p className="">
                 Have hackathon experience and would love to share it with new
                 developers? Apply to be a mentor for ZotHacks 2021!
               </p>
               <a
-                href="https://docs.google.com/forms/d/1hCRUwgHL485K8O_OXVOohpAU0U_jqqpbHctsu6i4mdk"
+                href="https://airtable.com/shrbPw3zLgnVZkMkA"
                 data-place="bottom"
                 data-tip="Make sure to use your UCI email!"
               >
                 <Button
                   style={{
-                    borderRadius: "50px",
-                    width: "200px",
-                    backgroundColor: "#F95C6F",
+                    borderRadius: "10px",
+                    width: "220px",
+                    backgroundColor: "#E2B7F7",
                     height: "40px",
+                    fontWeight: "bold",
+                    color: "black",
+                    filter: "drop-shadow(0px 20px 20px rgba(0, 0, 0, 0.2))"
                   }}
                 >
-                  Apply to be a Mentor
+                  APPLY TO BE A MENTOR
                 </Button>
               </a>
             </div>
@@ -147,17 +148,17 @@ function Home() {
         <img className="mentors-butterfly --two" src={planetTwo} />
       </section>
       <section id="sponsors">
-        <img className="banner" src={ticketBanner} />
+        <img className="banner ticket-banner" src={ticketBanner} />
         <div className="card">
           <Fade duration={1000}>
             <h2>Sponsors</h2>
-            <h3 className="sponsor-tier">Gold Sponsors</h3>
+            <h3 className="sponsor-tier">Gold</h3>
             <div className="sponsor-logo-wrapper">
               <img src={zothacksLogo}></img>
               <img src={zothacksLogo}></img>
               <img src={zothacksLogo}></img>
             </div>
-            <h3 className="sponsor-tier">Silver Sponsors</h3>
+            <h3 className="sponsor-tier">Silver</h3>
             <div className="sponsor-logo-wrapper">
               <img src={zothacksLogo}></img>
               <img src={zothacksLogo}></img>
@@ -165,7 +166,7 @@ function Home() {
           </Fade>
         </div>
       </section>
-      <section id="faq">
+     <section id="faq">
         <img className="wave-border sin-wave--two" src={pixelWaveDown} />
         <Fade duration={1000}>
           <h2>FAQ</h2>
@@ -182,7 +183,7 @@ function Home() {
           </div>
         </Fade>
       </section>
-      <section id="credits">
+        <section id="credits">
 
       </section>
     </div>

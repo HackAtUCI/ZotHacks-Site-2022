@@ -3,9 +3,9 @@ import "./Blinkers.scss";
 
 function Blinkers({ blinkerCount }) {
     return (
-        <div className="fireflies">
+        <div className="blinkers">
             {[...Array(blinkerCount)].map(function(z, index) {
-                return <div className="firefly" key={index}/>;
+                return <div className="blinker" key={index}/>;
             })}
         </div>
     );

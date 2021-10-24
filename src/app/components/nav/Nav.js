@@ -36,20 +36,25 @@ function NavigationBar() {
               </p>
             </Link>
           </Nav.Link>
-          <Nav.Link>
-            <Link to="/starter-packs">
-              <p className={currentPath.includes("/starter-packs") && "selected"}>
-                Resources
+          <Nav.Link href="/" className="apply-nav-button-wrapper">
+              <p className="apply-nav-button">
+                Apply
               </p>
-            </Link>
           </Nav.Link>
-          <Nav.Link>
-            <Link to="/schedule">
-              <p className={currentPath.includes("/schedule") && "selected"}>
-                Schedule
-              </p>
-            </Link>
-          </Nav.Link>
+          {/*<Nav.Link>*/}
+          {/*  <Link to="/starter-packs">*/}
+          {/*    <p className={currentPath.includes("/starter-packs") && "selected"}>*/}
+          {/*      Resources*/}
+          {/*    </p>*/}
+          {/*  </Link>*/}
+          {/*</Nav.Link>*/}
+          {/*<Nav.Link>*/}
+          {/*  <Link to="/schedule">*/}
+          {/*    <p className={currentPath.includes("/schedule") && "selected"}>*/}
+          {/*      Schedule*/}
+          {/*    </p>*/}
+          {/*  </Link>*/}
+          {/*</Nav.Link>*/}
         </Nav>
       </Navbar.Collapse>
     </Navbar>
