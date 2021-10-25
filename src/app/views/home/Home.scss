@@ -405,7 +405,11 @@
 
       img {
         margin: 0m 1rem;
-        width: 100px;
+        width: 40%;
+
+        &:hover {
+          transform: scale(1.05);
+        }
       }
     }
   }
