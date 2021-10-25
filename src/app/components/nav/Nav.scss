@@ -1,176 +1,54 @@
 @import "globals/zothacks-styles.scss";
 
-.nav {
-  width: 100vw;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+#app-navbar {
+  width: 100%;
   position: fixed;
-  z-index: 100000;
+  z-index: 100;
   background: rgba(8, 8, 77, 0.8);
   filter: drop-shadow(0px 7px 12px rgba(0, 0, 0, 0.35));
-  top: 0;
-  left: 0;
-  padding: 0;
 
-  p {
-    color: white;
-    font-size: 30px;
-    margin-right: 30px;
-    margin-bottom: 0px;
-    line-height: 38px;
+  .navbar-nav {
+    align-items: center;
+  }
+
+  .nav-item {
+    margin: 1rem;
+  }
+
+  .nav-link {
+    font-size: 1.5rem;
     font-weight: 700;
+    padding: 0.35rem 1rem;
   }
 
-  .apply-nav-button-wrapper {
-    background-color: white;
-    border-radius: 10px;
-    margin: 0 30px 0 0;
-    transition-duration: 0.25s;
-    outline: white solid 2px;
-    &:hover {
-      background-color: transparent;
-      & p {
-        color: white !important;
-      }
-      outline: white solid 2px;
-    }
-    @media screen and (max-width: $break-medium) {
-      margin: 0 30px;
+  .nav-link-outline {
+    border: 2px solid $pink;
+    border-radius: 0.5rem;
+    color: $pink;
+    transition: background-color 0.35s ease, color 0.35s ease;
+
+    &:hover,
+    &.active {
+      background-color: $pink;
+      color: $fontColor;
     }
   }
 
-  .apply-nav-button {
-      color: black ;
-      margin: 0 10px !important;
-    &:hover {
-      color: white !important;
-      transition: ease 3ms;
-    }
-  }
-
-  .navbar-toggler {
-    outline: none;
-  }
-
-  a {
-    text-decoration: none;
-  }
-
-  i {
-    margin-left: 10px;
-  }
-
-  p:hover {
-    cursor: pointer;
-  }
-
-  .nav-left {
-    margin-left: 30px;
-
-    img {
-      height: 60px;
-      width: 60px;
-    }
-  }
-  
-  .nav-right {
-    margin-right: 30px;
-    display: flex;
-    flex-direction: row;
-  }
-
-
-  .selected {
-    color: rgba(255, 255, 255, 1) !important;
-  }
-
-  .nav-resource-dropdown {
-    width: 15em;
-    height: 212px;
-    background-color: white;
-    position: absolute;
-    border-radius: 10px;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-    transform: translate(-110px, 20px);
-
-    .nav-resource-hover-buffer {
-      width: 15em;      
-      height: 40px;
-      // background: transparent;
-      transform: translateY(-20px);
-      position: absolute;
-    }
-    
-    .nav-resource-dropdown-tag {
-      background-color: white;
-      width: 20px;
-      height: 20px;
-      transform: rotate(45deg) translate(140px, -148px);
-      border-radius: 3px;
-      position: absolute;
-      z-index: -1
-    }
-
-    .nav-resource-dropdown-item {
-      width: calc(100% - 10px);
-      height: 60px;
-      margin-right: 0;
-      margin: 5px;
-      text-align: left;
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      border-radius: 10px;
-      
-      p {
-        margin-left: 16px;
-        color: #2e2e2e;
-      }
-    }
-
-    .nav-resource-dropdown-item:hover {
-      background-color: #e7e7e7;
-      
-      p {
-        color: #2e2e2e;
-      }
-    }
-
-    .nav-resource-border {
-      width: 100%;
-      background-color: lightgray;
-      height: 1px;
-    }
+  .navbar-logo {
+    height: 40px;
+    width: 40px;
   }
 }
 
-@media screen and (max-width: 780px) {
-  .nav {
-    height: 90px;
-    .navbar-toggler {
-      margin-right: 30px;
+@media screen and (min-width: 768px) {
+  #app-navbar {
+    .navbar-logo {
+      height: 60px;
+      width: 60px;
     }
-    .nav-left {
-      margin: 10px;
 
-      img {
-        height: 40px;
-        width: 40px;
-      }
-    }
-    .nav-right {
-      flex-direction: column !important;
-      margin-right: 0;
-      margin-top: 4px;
-      padding-bottom: 10px;
-      background: rgba(8, 8, 77, 0.8);
-      filter: drop-shadow(0px 7px 12px rgba(0, 0, 0, 0.35));
-      p {
-        font-size: 18px;
-        margin: 0 5px;
-      }
+    .nav-link {
+      font-size: 1.75rem;
     }
   }
 }

@@ -1,64 +1,42 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import { NavLink } from "react-router-dom";
+
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import './Nav.scss';
 
-import { Link, useLocation } from "react-router-dom";
+import zothacksLogo from "assets/images/zothacks_logo_rya 2.svg";
 
-import logo from 'assets/images/zothacks_logo_rya 2.svg';
+import "./Nav.scss";
 
 function NavigationBar() {
-  const location = useLocation();
-  const [currentPath, setcurrentPath] = useState("");
-
-  useEffect(() => {
-    setcurrentPath(location.pathname);
-    console.log(location.pathname);
-  }, [location]);
-
-
   return (
-    <Navbar className="nav" expand="lg" variant="dark">
-      <Navbar.Brand className="nav-left">
-        <Nav.Link href="/">
-          <Link to="/">
-            <img src={logo} alt="Zothacks Logo"></img>
-          </Link>
-        </Nav.Link>
+    <Navbar id="app-navbar" expand="md" variant="dark">
+      <Navbar.Brand as={NavLink} exact to="/">
+        <img className="navbar-logo" src={zothacksLogo} alt="ZotHacks Logo" />
       </Navbar.Brand>
-      <Navbar.Toggle aria-controls="inner-navbar-nav"/>
+      <Navbar.Toggle aria-controls="inner-navbar-nav" />
       <Navbar.Collapse id="inner-navbar-nav">
-        <Nav className="nav-right ml-auto">
-          <Nav.Link>
-            <Link to="/">
-              <p className={currentPath === "/" && "selected"}>
-                Home
-              </p>
-            </Link>
-          </Nav.Link>
-          <Nav.Link href="/" className="apply-nav-button-wrapper">
-              <p className="apply-nav-button">
-                Apply
-              </p>
-          </Nav.Link>
-          {/*<Nav.Link>*/}
-          {/*  <Link to="/starter-packs">*/}
-          {/*    <p className={currentPath.includes("/starter-packs") && "selected"}>*/}
-          {/*      Resources*/}
-          {/*    </p>*/}
-          {/*  </Link>*/}
-          {/*</Nav.Link>*/}
-          {/*<Nav.Link>*/}
-          {/*  <Link to="/schedule">*/}
-          {/*    <p className={currentPath.includes("/schedule") && "selected"}>*/}
-          {/*      Schedule*/}
-          {/*    </p>*/}
-          {/*  </Link>*/}
-          {/*</Nav.Link>*/}
+        <Nav className="ml-auto" as="ul">
+          <NavLinkItem exact to="/">
+            Home
+          </NavLinkItem>
+          <NavLinkItem to="/apply" className="nav-link-outline">
+            Apply
+          </NavLinkItem>
+          {/* <NavLinkItem to="/starter-packs">Resources</NavLinkItem> */}
+          {/* <NavLinkItem to="/schedule">Schedule</NavLinkItem> */}
         </Nav>
       </Navbar.Collapse>
     </Navbar>
-  )
+  );
+}
+
+function NavLinkItem(props) {
+  return (
+    <Nav.Item as="li">
+      <Nav.Link as={NavLink} {...props} />
+    </Nav.Item>
+  );
 }
 
 export default NavigationBar;
