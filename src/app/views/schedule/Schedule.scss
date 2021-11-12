@@ -30,7 +30,7 @@
     margin-top: -11.5vh;
 
     img {
-      width: 100%;
+      width: 98vw;
     }
 
     @media screen and (max-width: $break-medium) {
@@ -49,13 +49,13 @@
     color: white;
 
     .schedule-countdown {
+      width:55vw;
       text-align: left;
-      flex-direction: column;
       font-family: "Chakra Petch", sans-serif;
       font-style: normal;
       font-weight: bold;
-      font-size: 9.5vw;
-      height: 11.5vw;
+      font-size: 10vw;
+      padding-top: 11vh;
 
       @media screen and (max-width: $break-medium) {
         margin-bottom: 0 !important;
@@ -75,7 +75,7 @@
   }
 
   #schedule-cards {
-    margin-top: 190px;
+    margin-top: 140px;
     height: 100%;
     justify-content: center;
     align-items: center;
@@ -123,8 +123,7 @@
           float: left;
           font-family: "Chakra Petch", sans-serif;
           font-style: normal;
-          font-weight: bold;
-          font-size: 28px;
+          font-size: 1.5rem;
           color: $white;
         }
 
