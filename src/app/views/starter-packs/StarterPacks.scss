@@ -54,15 +54,16 @@
     }
     & h3 {
       text-decoration: underline;
-      margin-bottom: 0;
+      margin-bottom: 0 10px;
       padding: 0 20px;
     }
   }
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 800px) {
   .StarterPacks {
     .resources-main-title {
+      margin-top: 8rem;
       font-size: 3.8rem;
     }
   }
