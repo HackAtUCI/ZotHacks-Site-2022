@@ -1,5 +1,5 @@
 import React from "react"
-import { Route, Switch } from "react-router-dom"
+import { Route, Switch, Redirect } from "react-router-dom"
 import history from "./history"
 import "./App.scss"
 
@@ -23,6 +23,7 @@ function App() {
                 {/*  window.location.href = 'https://education.github.com/discount_requests/student_application?utm_source=2020-11-13-ZotHacks2020'; */}
                 {/*  return null;*/}
                 {/*}}/>*/}
+                <Route><Redirect to="/" /></Route>  // redirect to Home if page doesn't exist
             </Switch>
             <Footer/>
         </div>
