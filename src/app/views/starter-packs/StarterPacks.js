@@ -5,15 +5,35 @@ import PinkStar from "../../../assets/images/pinkStar.svg";
 import BlueStar from "../../../assets/images/blueStar.svg";
 import ExternalLink from "../../containers/external-link/ExternalLink";
 
+import { motion } from "framer-motion";
+
 function StarterPacks() {
   return (
     <div className="StarterPacks">
       <h2 className="resources-main-title">Resources</h2>
       <section className="starter-pack-block">
         <div className="resource-title">
-          <img src={PinkStar} alt="star"/>
+          <motion.img
+              src={PinkStar}
+              animate={{ rotate: 360 }}
+              transition={{
+                  duration: 10,
+                  loop: Infinity,
+                  ease: "linear",
+              }}
+              alt="star"
+          />
           <h3>API Resources</h3>
-          <img style={{transform: "scale(-1,1)"}} src={BlueStar} alt="star"/>
+          <motion.img
+              src={BlueStar}
+              animate={{ rotate: -360 }}
+              transition={{
+                  duration: 10,
+                  loop: Infinity,
+                  ease: "linear",
+              }}
+              alt="star"
+          />
         </div>
         <p>
           Application Programming Interface (API) are interfaces or
@@ -42,9 +62,27 @@ function StarterPacks() {
       <hr style={{width: "60vw", borderTop: "3px solid white", marginTop: "90px", marginBottom: "40px" }}/>
       <section id="starter-pack-block">
         <div className="resource-title">
-          <img src={BlueStar} alt="star"/>
+          <motion.img
+              src={BlueStar}
+              animate={{ rotate: 360 }}
+              transition={{
+                  duration: 10,
+                  loop: Infinity,
+                  ease: "linear",
+              }}
+              alt="star"
+          />
           <h3>Backend Frameworks Resources</h3>
-          <img style={{transform: "scale(-1,1)"}} src={PinkStar} alt="star"/>
+          <motion.img
+              src={PinkStar}
+              animate={{ rotate: -360 }}
+              transition={{
+                  duration: 10,
+                  loop: Infinity,
+                  ease: "linear",
+              }}
+              alt="star"
+          />
         </div>
         <p>
           Backend frameworks are functional code skeletons that allows you to
