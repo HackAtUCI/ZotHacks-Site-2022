@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.59439caf.chunk.css",
-    "main.js": "/static/js/main.7ce3bcd4.chunk.js",
-    "main.js.map": "/static/js/main.7ce3bcd4.chunk.js.map",
+    "main.css": "/static/css/main.dfcc0dd0.chunk.css",
+    "main.js": "/static/js/main.236f4b43.chunk.js",
+    "main.js.map": "/static/js/main.236f4b43.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.7966b87c.js",
     "runtime-main.js.map": "/static/js/runtime-main.7966b87c.js.map",
-    "static/js/2.4d3388a5.chunk.js": "/static/js/2.4d3388a5.chunk.js",
-    "static/js/2.4d3388a5.chunk.js.map": "/static/js/2.4d3388a5.chunk.js.map",
+    "static/js/2.436cd394.chunk.js": "/static/js/2.436cd394.chunk.js",
+    "static/js/2.436cd394.chunk.js.map": "/static/js/2.436cd394.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.85dc77fef88c7edc35b8504b75a4bc05.js": "/precache-manifest.85dc77fef88c7edc35b8504b75a4bc05.js",
+    "precache-manifest.9297a79aba19cdde44cf8ebf9838ba4c.js": "/precache-manifest.9297a79aba19cdde44cf8ebf9838ba4c.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.59439caf.chunk.css.map": "/static/css/main.59439caf.chunk.css.map",
-    "static/js/2.4d3388a5.chunk.js.LICENSE.txt": "/static/js/2.4d3388a5.chunk.js.LICENSE.txt",
+    "static/css/main.dfcc0dd0.chunk.css.map": "/static/css/main.dfcc0dd0.chunk.css.map",
+    "static/js/2.436cd394.chunk.js.LICENSE.txt": "/static/js/2.436cd394.chunk.js.LICENSE.txt",
     "static/media/applyButton.png": "/static/media/applyButton.d714977b.png",
     "static/media/blueStar.svg": "/static/media/blueStar.15a70474.svg",
     "static/media/claw-and-anteater.svg": "/static/media/claw-and-anteater.eacc12a2.svg",
@@ -19,6 +19,7 @@
     "static/media/claw-machine-front.svg": "/static/media/claw-machine-front.c5b73a5d.svg",
     "static/media/externalLink.svg": "/static/media/externalLink.c0a2d80f.svg",
     "static/media/facebook_icon.svg": "/static/media/facebook_icon.ce131e6f.svg",
+    "static/media/guayaki.png": "/static/media/guayaki.6b803c66.png",
     "static/media/instagram_icon.svg": "/static/media/instagram_icon.b843c286.svg",
     "static/media/linkedin_icon.svg": "/static/media/linkedin_icon.e52fddfd.svg",
     "static/media/mail_icon.svg": "/static/media/mail_icon.54ae35f4.svg",
@@ -38,8 +39,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.7966b87c.js",
-    "static/js/2.4d3388a5.chunk.js",
-    "static/css/main.59439caf.chunk.css",
-    "static/js/main.7ce3bcd4.chunk.js"
+    "static/js/2.436cd394.chunk.js",
+    "static/css/main.dfcc0dd0.chunk.css",
+    "static/js/main.236f4b43.chunk.js"
   ]
 }
