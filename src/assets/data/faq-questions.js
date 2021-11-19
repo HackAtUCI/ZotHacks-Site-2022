@@ -28,17 +28,13 @@ let faqQuestions = [
   {
     question: "Do I sign up as a team or individual?",
     answer:
-      "You will apply as an individual. We will be personally reviewing each application and accepting on an individual basis.",
+      "You will <a href='https://docs.google.com/forms/d/e/1FAIpQLSdPhGwP7KUTcIa6rWsPlyCswlykZwR-dXCJo78Gxahy0Q3sTA/viewform' target='_blank' >apply</a> as an individual. We will be personally reviewing each application and accepting on an individual basis.",
   },
   {
     question: "Will there be prizes?",
     answer:
-      "There will be prizes for all winners at ZotHacks 2021. ",
+        "There will be prizes for all winners at ZotHacks 2021.",
   },
-  // {
-  //   question: "Are there swag and food? sponsors, swag, and food?",
-  //   answer: "Of course! Get hyped!",
-  // },
   {
     question:
       "Am I allowed to come with a project pre-built or will I be building the project from scratch?",

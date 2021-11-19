@@ -15,6 +15,17 @@
   .answer-wrapper {
     display: flex;
     flex-direction: row;
+    div {
+      width: 100%;
+    }
+    a {
+      font-weight: bold;
+      text-decoration: underline;
+      color: white;
+    }
+    a:hover {
+      color: white;
+    }
   }
 
   .answer-wrapper p {

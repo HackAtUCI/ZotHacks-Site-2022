@@ -172,14 +172,13 @@
       .claw-machine-wrapper {
           position: relative;
           height: 18rem;
-          padding: 0 10%;
+          padding: 0 3%;
           z-index: 2;
       }
 
       @media screen and (max-width: $break-medium) {
         .claw-machine-wrapper {
           position: relative;
-          padding: 0 10%;
           transform: scale(0.75);
           top: 20px;
           margin-bottom: 30%;
@@ -188,6 +187,9 @@
       }
 
       @media screen and (max-width: $break-small) {
+        .title-info {
+          width: 100vw;
+        }
         .claw-machine-wrapper {
           transform: scale(0.5);
           margin-bottom: 0;
@@ -403,9 +405,28 @@
       flex-wrap: wrap;
       margin: 2rem auto;
 
-      img {
-        margin: 0m 1rem;
+      & > * {
+        text-align: center;
+        width: 100%;
+      }
+
+      a {
+        text-align: center;
+      }
+
+      .sponsor-one {
+        margin: 0 1rem;
+        padding-bottom: 3rem;
         width: 40%;
+        height: 40%;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+
+      .sponsor-two {
+        margin: 0 1rem;
 
         &:hover {
           transform: scale(1.05);
@@ -456,11 +477,20 @@
   }
 }
 
+@media screen and (max-width: $break-medium) {
+  .sponsor-two {
+    width: 40%;
+  }
+}
+
 @media screen and (max-width: $break-small) {
   .star-banner {
     display: none;
   }
   .ticket-banner {
     display: none;
+  }
+  .sponsor-two {
+    width: 30%;
   }
 }

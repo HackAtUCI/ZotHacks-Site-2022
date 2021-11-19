@@ -6,8 +6,8 @@ import Countdown from "react-countdown"
 import pixels from "../../../assets/images/pixels.svg"
 
 function Schedule() {
-  let hackingBegins = "05 Nov 2021 21:00:00 PST"
-  let devpostSubmission = "07 Nov 2021 10:00:00 PST"
+  let hackingBegins = "20 Nov 2021 11:00:00 PST"
+  let devpostSubmission = "20 Nov 2021 23:00:00 PST"
 
   function generateCountdown() {
     if (Date.parse(hackingBegins) - Date.now() > 0) {

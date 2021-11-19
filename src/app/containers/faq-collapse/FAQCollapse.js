@@ -42,7 +42,7 @@ function FAQCollapse({ question, answer }) {
                 opacity: 0,
               }}
             >
-              <p>{answer}</p>
+              <p dangerouslySetInnerHTML={{ __html: answer}}/>
             </motion.div>
           ) : null}
         </AnimatePresence>

@@ -21,8 +21,14 @@ import planetTwo from "assets/images/planetTwo.png"
 import pixelWaveUp from "assets/images/pixel_wave_up.png"
 import pixelWaveDown from "assets/images/pixel_wave_down.png"
 import applyButton from "assets/images/applyButton.png"
+import mentorButton from "assets/images/mentorButton.png";
 import zothacksLogo from "assets/images/zothacks_logo_rya 2.svg"
+
 import mtxLogo from "assets/images/sponsors/mtx_logo.png";
+import guayakiLogo from "assets/images/sponsors/guayaki.png";
+
+const APPLICATION_URL =
+    "https://docs.google.com/forms/d/e/1FAIpQLSdPhGwP7KUTcIa6rWsPlyCswlykZwR-dXCJo78Gxahy0Q3sTA/viewform";
 
 function Home() {
     return (
@@ -38,7 +44,8 @@ function Home() {
                                 <h4>November 20-21, 2021</h4>
                                 <Link
                                     className="apply-button-wrapper"
-                                    to="/apply"
+                                    to={{ pathname: APPLICATION_URL, }}
+                                    target="_blank"
                                     data-place="bottom"
                                     data-tip="Make sure to use your UCI email!"
                                 >
@@ -100,7 +107,7 @@ function Home() {
                         <h2>What is ZotHacks?</h2>
                         <p className="card-text">
                             ZotHacks is a beginner-friendly hackathon where students with
-                            minimal computer science experience will learn to build and build
+                            minimal computer science experience will learn to build
                             their first CS project. Through ZotHacks, we introduce these
                             students to the world of hackathons and web development by
                             providing technical workshops, strong mentorship, and
@@ -120,25 +127,25 @@ function Home() {
                                 Have hackathon experience and would love to share it with new
                                 developers? Apply to be a mentor for ZotHacks 2021!
                             </p>
-                            <a
-                                href="https://airtable.com/shrbPw3zLgnVZkMkA"
+                            <Link
+                                className="apply-button-wrapper"
+                                to={{ pathname: "https://airtable.com/shrbPw3zLgnVZkMkA" }}
+                                target="_blank"
                                 data-place="bottom"
                                 data-tip="Make sure to use your UCI email!"
                             >
-                                <Button
+                                <img
+                                    type="image"
+                                    className="apply-button"
                                     style={{
-                                        borderRadius: "10px",
-                                        width: "220px",
-                                        backgroundColor: "#E2B7F7",
-                                        height: "40px",
-                                        fontWeight: "bold",
-                                        color: "black",
-                                        filter: "drop-shadow(0px 20px 20px rgba(0, 0, 0, 0.2))"
+                                        height: "70px",
+                                        width: "auto",
+                                        marginTop: "0.5rem",
                                     }}
+                                    src={mentorButton}
                                 >
-                                    APPLY TO BE A MENTOR
-                                </Button>
-                            </a>
+                                </img>
+                            </Link>
                         </div>
                     </Fade>
                 </div>
@@ -148,11 +155,18 @@ function Home() {
                 <img className="banner ticket-banner" src={ticketBanner} />
                 <div className="card">
                     <Fade duration={1000}>
-                        <h2>Thank You to our Sponsor!</h2>
+                        <h2>Thank You to our Sponsors!</h2>
                         <div className="sponsor-logo-wrapper">
-                            <a href="https://mtx.gg">
-                                <img src={mtxLogo} alt="mtx logo"/>
-                            </a>
+                            <div>
+                                <a href="https://mtx.gg" target="_blank">
+                                    <img className="sponsor-one" src={mtxLogo} alt="mtx logo"/>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="https://guayaki.com/" target="_blank">
+                                    <img className="sponsor-two" src={guayakiLogo} alt="guayaki logo"/>
+                                </a>
+                            </div>
                         </div>
                         {/*<h3 className="sponsor-tier">Gold</h3>*/}
                         {/*<div className="sponsor-logo-wrapper">*/}
