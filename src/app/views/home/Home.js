@@ -42,24 +42,6 @@ function Home() {
                             <div className="hero-wrapper">
                                 <h1 className="glow">ZotHacks</h1>
                                 <h4>November 20-21, 2021</h4>
-                                <Link
-                                    className="apply-button-wrapper"
-                                    to={{ pathname: APPLICATION_URL, }}
-                                    target="_blank"
-                                    data-place="bottom"
-                                    data-tip="Make sure to use your UCI email!"
-                                >
-                                    <img
-                                        type="image"
-                                        className="apply-button"
-                                        style={{
-                                            height: "70px",
-                                            marginTop: "0.5rem",
-                                        }}
-                                        src={applyButton}
-                                    >
-                                    </img>
-                                </Link>
                             </div>
                         </Fade>
 
