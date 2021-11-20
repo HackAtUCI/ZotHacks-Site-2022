@@ -92,18 +92,23 @@ function StarterPacks() {
               alt="star"
           />
         </div>
-        {/*<p>*/}
-        {/*  Backend frameworks are functional code skeletons that allows you to*/}
-        {/*  build custom REST APIs on your own server to store data, perform*/}
-        {/*  functions, and utilize templated tools.*/}
-        {/*</p>*/}
+        <h4>Backend Starter Code</h4>
+        <p>
+          Backend frameworks are functional code skeletons that allows you to
+          build custom REST APIs on your own server to store data, perform
+          functions, and utilize templated tools.
+        </p>
+        <div className="external-link-list">
+          <ExternalLink text="Simple Flask Example" to="https://github.com/hackuci/zothacks-backend-startercode"/>
+          <ExternalLink text="Advanced Flask Example" to="https://github.com/hackuci/zothacks-2020-backend"/>
+        </div>
         <h4>Git</h4>
         <p>
             If you want to learn and test your git skills, check out this tutorial! Here you will find a walk through of the basic git commands and principles, so that you can put them into practice with your hackathon team.
         </p>
         <div className="external-link-list">
-          <ExternalLink text="Workshop Video Link" to="Workshop video link"/>
-          <ExternalLink text="Example Flask Template" to="https://github.com/hackuci/zothacks-2020-backend"/>
+          <ExternalLink text="Intro to Git" to="https://www.youtube.com/watch?v=hwP7WQkmECE"/>
+          <ExternalLink text="Hack Git Workshop" to="https://github.com/zpinto/learn-git-with-hack"/>
         </div>
           <h4>Postman</h4>
           <p>
