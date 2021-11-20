@@ -44,7 +44,7 @@ let scheduleData = [
       },
       {
         name: "Dinner",
-        time: "6:00PM",
+        time: "6:30PM",
       },
       {
         name: "Hacking Ends",
