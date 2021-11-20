@@ -92,6 +92,15 @@ function StarterPacks() {
               alt="star"
           />
         </div>
+        <h4>Frontend Starter Code</h4>
+        <p>
+          Frontend web development is the practice of producing HTML, CSS 
+          and JavaScript for a website or web application that a user can 
+          see and interact with.
+        </p>
+        <div className="external-link-list">
+          <ExternalLink text="Frontend Example" to="https://github.com/derek-ye/frontend-demo"/>
+        </div>
         <h4>Backend Starter Code</h4>
         <p>
           Backend frameworks are functional code skeletons that allows you to
