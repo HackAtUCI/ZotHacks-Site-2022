@@ -1,5 +1,6 @@
 import React from "react";
 import { Route, Routes, Navigate } from "react-router-dom";
+import "globals/bootstrap.scss";
 import "./App.scss";
 
 import { NavigationBar, Footer } from "app/components";
