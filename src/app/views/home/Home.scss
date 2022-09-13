@@ -1,496 +1,104 @@
 @import "globals/zothacks-styles.scss";
 
-.Home {
-  text-align: center;
-  min-height: 100vh;
-
-  h1 {
-    font-weight: 600;
-    font-size: 6rem;
-  }
-
-  button {
-    width: 100px;
-    box-shadow: 0 25px 50px -12px rgba(0,0,0,.25);
-    border: 0px !important;
-  }
-
-  .apply-button {
-    transition-duration: 0.15s;
-    &:hover {
-      transform: scale(1.05);
-    }
-  }
-
-  .apply-button-wrapper {
-    display: block;
-    margin-right: auto;
-    @media screen and (max-width: $break-medium) {
-      margin-right: 0;
-    }
-  }
-
-  .wave-border {
-    width: 100vw;
-  }
-
-  .banner {
-    position: absolute;
-    width: 100vw;
-
-    @media screen and (max-width: $break-small) {
-      display: hidden;
-    }
-
-    @media screen and (max-width: $break-medium) {
-      margin-top: 5rem;
-    }
-  }
-
-  .glow {
-    color: #fff;
-    text-align: center;
-    text-shadow: 0 0 50px #fff;
-  }
-
-  .sin-wave--one {
-    margin-bottom: -1px;
-  }
-
-  .sin-wave--two {
-    margin-top: -1px;
-  }
-
-  .card {
-    color: white;
-    width: 60vw;
-    background: linear-gradient(to right, $lightPurpleBackground, $darkPurpleBackground);
-    padding: 3rem;
-    border-radius: 1rem;
-    box-shadow: 0 30px 40px rgba(205, 106, 215, 0.54);
-    z-index: 1;
-
-    @media screen and (max-width: $break-small) {
-      width: 80vw;
-      text-align: center;
-      padding: 1.7rem;
-      padding-top: 2rem;
-    }
-
-    @media screen and (max-width: $break-medium) {
-      margin-top: 5rem;
-    }
-
-    h2 {
-      text-align: center;
-      font-size: 3rem;
-      // width: 80vw;
-      
-      @media screen and (max-width: $break-small) {
-        font-size: 25px;
-      }
-    }
-  }
-
-  .card-text {
-    text-align: left;
-  }
-
-  #intro {
-    height: 100vh;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    text-align: left;
-    color: white;
-    box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.1);
-    background: linear-gradient(to right, $lightPurpleBackground, $darkPurpleBackground);
-
-    .intro-wrapper {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      height: calc(100% - 320px);
-    }
-
-    .schedule-nav {
-      position: absolute;
-      top: 0;
-      right: 0;
-      display: flex;
-      justify-content: flex-end;
-
-      a {
-        margin-right: 0 !important;
-        text-decoration: none;
-        display: flex;
-        align-items: center;
-
-        h5 {
-          margin-bottom: 0;
-          margin-left: 30px;
-        }
-      }
-    }
-
-    .schedule-button {
-      margin: 2em;
-      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-    }
-
-    .title-info {
-      display: flex;
-      flex-direction: row;
-      margin-top: 15rem;
-
-      @media screen and (max-width: $break-medium) {
-        flex-direction: column-reverse;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        margin-top: 20rem;
-
-        h1 {
-          font-size: 60px;
-        }
-
-        .title-info-description {
-          width: 70vw;
-        }
-      }
-
-      .hero-wrapper {
-          display: flex;
-          flex-direction: column;
-          justify-content: flex-start;
-          z-index: 3;
-      }
-
-      .claw-machine-wrapper {
-          position: relative;
-          height: 18rem;
-          padding: 0 3%;
-          z-index: 2;
-      }
-
-      @media screen and (max-width: $break-medium) {
-        .claw-machine-wrapper {
-          position: relative;
-          transform: scale(0.75);
-          top: 20px;
-          margin-bottom: 30%;
-          z-index: 2;
-        }
-      }
-
-      @media screen and (max-width: $break-small) {
-        .title-info {
-          width: 100vw;
-        }
-        .claw-machine-wrapper {
-          transform: scale(0.5);
-          margin-bottom: 0;
-        }
-      }
-
-      .claw-machine {
-          height: 500px;
-      }
-      .claw-machine-back {
-          z-index: 10;
-          position: absolute;
-      }
-
-      .claw-and-anteater {
-          z-index: 2;
-          position: absolute;
-          height: 500px;
-          padding: 30px 30px;
-      }
-  
-      .succulent {
-        width: 424px;
-        height: 400px;
-        margin-left: 2rem;
-      }
-
-      div {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-      }
-
-      h1 {
-        margin-bottom: .1em !important;
-      }
-    }
-  }
-
-  @media screen and (max-width: $break-medium) {
-    .wave-transition {
-      display: none;
-    }
-  }
-
-  @media screen and (max-width: $break-medium) {
-    .card p {
-      text-align: center;
-      font-size: 1rem;
-    }
-    .card h2 {
-      font-size: 2rem;
-    }
-  }
-
-  #info {
-    margin: 7rem 0 0 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-
-    .card {
-      background: linear-gradient(270deg, #191970 0%, #7655BC 100%),
-      linear-gradient(270deg, #A4C7EF 0%, #EBFBFF 100%) !important;
-      box-shadow: 0px 50px 100px 0px rgba(134, 47, 156, 0.4);
-    }
-
-    .zothacks-logo {
-      width: 100px;
-      margin: 0 auto 2rem auto;
-    }
-
-  }
-
-  #mentors {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-
-
-    .card {
-      box-shadow: 0px 50px 100px 0px rgba(205, 106, 215, 0.54);
-    }
-
-    & > h2 {
-      margin-top: 10vh;
-      width: 80vw;
-    }
-
-    div {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-
-      @media screen and (max-width: $break-medium) {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      img {
-        width: 18vw;
-        height: 18vw;
-        border-radius: 1rem;
-        margin-right: 1rem;
-
-        @media screen and (max-width: $break-medium) {
-          width: 15rem;
-          height: 15rem;
-          margin-right: 0;
-        }
-      }
-
-      .mentor-information { 
-        margin-left: 1.5rem;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        text-align: left;
-
-        & h2 {
-          text-align: left;
-        }
-
-        @media screen and (max-width: $break-medium) {
-          margin: 2rem 0 1rem 0;
-          text-align: center;
-          align-items: center;
-          & h2 {
-            text-align: center;
-          }
-        }
-      }
-    }
-
-    .mentors-butterfly {
-      width: 100px;
-      height: 100px;
-    }
-
-    .--one {
-      width: 120px;
-      height: 120px;
-      margin-right: 70vw;
-      margin-bottom: -1px;
-      z-index: 2;
-      transform: translateY(190px);
-
-      @media screen and (max-width: $break-medium) {
-        position: absolute;
-        top: 23px;
-        left: 21vw;
-        margin: 0;
-        transform: translateX(-50px);
-      }
-
-      @media screen and (max-width: $break-small) {
-        display: none;
-      }
-    }
-
-    .--two {
-      margin-left: auto;
-      margin-right: 8vw;
-      transform: translateY(-150px) scale(1.5);
-
-      @media screen and (max-width: $break-medium) {
-        position: absolute;
-        top: 630px;
-        right: 13vw; 
-        margin: 0;
-        transform: translateX(40px);
-      }
-
-      @media screen and (max-width: $break-small) {
-        display: none;
-      }
-    }
-  }
-
-  #sponsors {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-bottom: 7rem;
-    width: 100vw;
-    text-align: left;
-
-    & > h2 {
-      margin-top: 2rem;
-    }
-
-    .card {
-      background: linear-gradient(to right, #76A9E5, #466FD9);
-      box-shadow: 0px 50px 100px 0px rgba(77, 122, 163, 0.57);
-    }
-
-    .sponsor-tier {
-      font-size: 1.8rem;
-      border-bottom: 2px solid white;
-      text-align: left;
-    }
-
-    .sponsor-logo-wrapper {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: space-evenly;
-      flex-wrap: wrap;
-      margin: 2rem auto;
-
-      & > * {
-        text-align: center;
-        width: 100%;
-      }
-
-      a {
-        text-align: center;
-      }
-
-      .sponsor-one {
-        margin: 0 1rem;
-        padding-bottom: 3rem;
-        width: 40%;
-        height: 40%;
-
-        &:hover {
-          transform: scale(1.05);
-        }
-      }
-
-      .sponsor-two {
-        margin: 0 1rem;
-
-        &:hover {
-          transform: scale(1.05);
-        }
-      }
-    }
-  }
-
-  #faq {
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-    background: linear-gradient(to right, $lightPurpleBackground, $darkPurpleBackground);
-
-    & > h2 {
-      width: 80vw;
-      margin-top: 2rem;
-
-      @media screen and (max-width: $break-medium) {
-        margin-top: 3rem;
-      }
-    }
-
-    & > div {
-      width: 60vw;
-
-      @media screen and (max-width: $break-small) {
-        width: 80vw;
-      }
-    }
-  }
-
-  #credits {
-    margin: -1px 0;
-    height: 15vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    background-color: $coloredLightBackground;
-    background: linear-gradient(to right, $lightPurpleBackground, $darkPurpleBackground);
-
-    p {
-      margin: 0;
-    }
-  }
+.home {
+	text-align: center;
+	min-height: 100vh;
+
+	section {
+		padding-bottom: 8rem;
+		padding-top: 8rem;
+	}
+
+	h1 {
+		font-weight: 600;
+		font-size: 6rem;
+	}
+
+	button {
+		width: 100px;
+		box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+		border: 0px !important;
+	}
+
+	.apply-button {
+		transition-duration: 0.15s;
+		&:hover {
+			transform: scale(1.05);
+		}
+	}
+
+	.apply-button-wrapper {
+		display: block;
+		margin-right: auto;
+		@media screen and (max-width: $break-medium) {
+			margin-right: 0;
+		}
+	}
+
+	.glow {
+		color: #fff;
+		text-align: center;
+		text-shadow: 0 0 50px #fff;
+	}
+
+	.card {
+		color: white;
+		width: 60vw;
+		background: linear-gradient(
+			to right,
+			$lightPurpleBackground,
+			$darkPurpleBackground
+		);
+		padding: 3rem;
+		border-radius: 1rem;
+		box-shadow: 0 30px 40px rgba(205, 106, 215, 0.54);
+		z-index: 1;
+
+		@media screen and (max-width: $break-small) {
+			width: 80vw;
+			text-align: center;
+			padding: 1.7rem;
+			padding-top: 2rem;
+		}
+
+		@media screen and (max-width: $break-medium) {
+			margin-top: 5rem;
+		}
+
+		h2 {
+			text-align: center;
+			font-size: 3rem;
+			// width: 80vw;
+
+			@media screen and (max-width: $break-small) {
+				font-size: 25px;
+			}
+		}
+	}
+
+	.card-text {
+		text-align: left;
+	}
+
+	@media screen and (max-width: $break-medium) {
+		.card p {
+			text-align: center;
+			font-size: 1rem;
+		}
+		.card h2 {
+			font-size: 2rem;
+		}
+	}
 }
 
 @media screen and (max-width: $break-medium) {
-  .sponsor-two {
-    width: 40%;
-  }
+	.sponsor-two {
+		width: 40%;
+	}
 }
 
 @media screen and (max-width: $break-small) {
-  .star-banner {
-    display: none;
-  }
-  .ticket-banner {
-    display: none;
-  }
-  .sponsor-two {
-    width: 30%;
-  }
+	.sponsor-two {
+		width: 30%;
+	}
 }

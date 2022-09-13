@@ -5,7 +5,7 @@ import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 
-import zothacksLogo from "assets/images/zothacks_logo_rya 2.svg";
+import zothacksLogo from "assets/icons/zothacks-logo.svg";
 
 import "./Nav.scss";
 

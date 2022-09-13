@@ -1,0 +1,33 @@
+@import "globals/zothacks-styles.scss";
+
+.home {
+	.faq {
+		color: white;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-direction: column;
+		background: linear-gradient(
+			to right,
+			$lightPurpleBackground,
+			$darkPurpleBackground
+		);
+
+		& > h2 {
+			width: 80vw;
+			margin-top: 2rem;
+
+			@media screen and (max-width: $break-medium) {
+				margin-top: 3rem;
+			}
+		}
+
+		& > div {
+			width: 60vw;
+
+			@media screen and (max-width: $break-small) {
+				width: 80vw;
+			}
+		}
+	}
+}
