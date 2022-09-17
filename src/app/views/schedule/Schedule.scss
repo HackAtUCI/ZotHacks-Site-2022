@@ -1,5 +1,4 @@
 @import "globals/zothacks-styles.scss";
-@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&display=swap");
 
 .Schedule {
   text-align: center;
@@ -51,7 +50,7 @@
     .schedule-countdown {
       width:55vw;
       text-align: left;
-      font-family: "Chakra Petch", sans-serif;
+      font-family: $fontFamilyBase, serif;
       font-style: normal;
       font-weight: bold;
       font-size: 10vw;
@@ -63,7 +62,7 @@
     }
 
     .schedule-countdown-text {
-      font-family: "Chakra Petch", sans-serif;
+      font-family: $fontFamilyBase, serif;
       font-style: normal;
       font-weight: normal;
       font-size: 1.5vw;
@@ -103,7 +102,7 @@
 
       h3 {
         color: $white;
-        font-family: "Chakra Petch", sans-serif;
+        font-family: $fontFamilyBase, serif;
         font-style: normal;
         font-weight: bold;
       }
@@ -121,7 +120,7 @@
 
         .left-text {
           float: left;
-          font-family: "Chakra Petch", sans-serif;
+          font-family: $fontFamilyBase, serif;
           font-style: normal;
           font-size: 1.5rem;
           color: $white;

@@ -12,12 +12,12 @@ function Sponsors() {
 				<h2>Thank You to our Sponsors!</h2>
 				<div className="sponsor-logo-wrapper">
 					<div>
-						<a href="https://mtx.gg" target="_blank">
+						<a href="https://mtx.gg" target="_blank" rel="noreferrer">
 							<img className="sponsor-one" src={mtxLogo} alt="mtx logo" />
 						</a>
 					</div>
 					<div>
-						<a href="https://guayaki.com/" target="_blank">
+						<a href="https://guayaki.com/" target="_blank" rel="noreferrer">
 							<img
 								className="sponsor-two"
 								src={guayakiLogo}

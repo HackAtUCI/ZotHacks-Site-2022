@@ -33,7 +33,7 @@ let faqQuestions = [
   {
     question: "Will there be prizes?",
     answer:
-        "There will be prizes for all winners at ZotHacks 2021.",
+        "There will be prizes for all winners at ZotHacks 2022.",
   },
   {
     question:

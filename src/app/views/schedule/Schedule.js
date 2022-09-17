@@ -6,14 +6,14 @@ import Countdown from "react-countdown"
 import pixels from "../../../assets/images/pixels.svg"
 
 function Schedule() {
-  let hackingBegins = "20 Nov 2021 11:00:00 PST"
-  let devpostSubmission = "20 Nov 2021 23:00:00 PST"
+  let hackingBegins = "13 Nov 2022 11:00:00 PST"
+  let devpostSubmission = "13 Nov 2022 23:00:00 PST"
 
   function generateCountdown() {
     if (Date.parse(hackingBegins) - Date.now() > 0) {
       return (
         <section id="schedule-block">
-          <div className="schedule-countdown">
+          <div className="schedule-countdown text-center">
             <Countdown date={hackingBegins} />
           </div>
           <div className="schedule-countdown-text">
@@ -24,7 +24,7 @@ function Schedule() {
     } else {
       return (
         <section id="schedule-block">
-          <div className="schedule-countdown">
+          <div className="schedule-countdown text-center">
             <Countdown date={devpostSubmission} />
           </div>
           <div className="schedule-countdown-text">

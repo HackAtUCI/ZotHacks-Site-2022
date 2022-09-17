@@ -15,7 +15,7 @@ function Mentors() {
 					<h2>Interested in becoming a mentor?</h2>
 					<p className="">
 						Have hackathon experience and would love to share it with new
-						developers? Apply to be a mentor for ZotHacks 2021!
+						developers? Apply to be a mentor for ZotHacks 2022!
 					</p>
 					<Link
 						className="apply-button-wrapper"
