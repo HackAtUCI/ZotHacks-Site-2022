@@ -70,8 +70,21 @@
 			.hero-wrapper {
 				display: flex;
 				flex-direction: column;
-				justify-content: flex-start;
+				justify-content: center;
 				z-index: 3;
+			}
+
+			.jeep-wrapper {
+				position: relative;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				z-index: 3;
+
+				:first-child {
+					position: absolute;
+					top: 20px;
+				}
 			}
 
 			@media screen and (max-width: $break-small) {
