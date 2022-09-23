@@ -7,11 +7,8 @@
 		align-items: center;
 		justify-content: space-between;
 		flex-direction: column;
-		background: linear-gradient(
-			to right,
-			$lightPurpleBackground,
-			$darkPurpleBackground
-		);
+		background: $black;
+		opacity: 50%;
 
 		& > h2 {
 			width: 80vw;

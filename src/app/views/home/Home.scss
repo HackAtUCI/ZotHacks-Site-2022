@@ -42,7 +42,7 @@
 	}
 
 	.card {
-		color: white;
+		color: $black;
 		width: 60vw;
 		background: linear-gradient(
 			to right,
@@ -78,6 +78,7 @@
 
 	.card-text {
 		text-align: left;
+		color: $brown;
 	}
 
 	@media screen and (max-width: $break-medium) {

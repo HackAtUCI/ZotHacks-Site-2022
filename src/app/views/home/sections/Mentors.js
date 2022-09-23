@@ -11,9 +11,9 @@ function Mentors() {
 		<section className="mentors">
 			<div className="card">
 				<img src={mentorship} />
-				<div className="mentor-information card-text">
+				<div className="mentor-information">
 					<h2>Interested in becoming a mentor?</h2>
-					<p className="">
+					<p className="card-text">
 						Have hackathon experience and would love to share it with new
 						developers? Apply to be a mentor for ZotHacks 2021!
 					</p>
