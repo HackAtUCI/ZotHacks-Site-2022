@@ -50,7 +50,6 @@
     .schedule-countdown {
       width:55vw;
       text-align: left;
-      font-family: $fontFamilyBase, serif;
       font-style: normal;
       font-weight: bold;
       font-size: 10vw;
@@ -62,7 +61,6 @@
     }
 
     .schedule-countdown-text {
-      font-family: $fontFamilyBase, serif;
       font-style: normal;
       font-weight: normal;
       font-size: 1.5vw;
@@ -102,7 +100,6 @@
 
       h3 {
         color: $white;
-        font-family: $fontFamilyBase, serif;
         font-style: normal;
         font-weight: bold;
       }
@@ -120,7 +117,6 @@
 
         .left-text {
           float: left;
-          font-family: $fontFamilyBase, serif;
           font-style: normal;
           font-size: 1.5rem;
           color: $white;

@@ -15,7 +15,7 @@ function Landing() {
 					<Fade duration={1000} left>
 						<div className="hero-wrapper">
 							<h1 className="glow">ZotHacks</h1>
-							<span className="h3">November 13-14, 2022</span>
+							<span className="h3">November 20-21, 2021</span>
 						</div>
 					</Fade>
 				</div>
