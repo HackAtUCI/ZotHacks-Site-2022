@@ -16,8 +16,8 @@ function Landing() {
 				<div className="title-info">
 					<Fade duration={1000} left>
 						<div className="jeep-wrapper">
-							<img src={jeepBody} />
-							<img src={jeepWheels} />
+							<img src={jeepBody} alt="Jeep's Body"/>
+							<img src={jeepWheels} alt="Jeep's Wheels"/>
 						</div>
 					</Fade>
 					<Fade duration={1000} right>
