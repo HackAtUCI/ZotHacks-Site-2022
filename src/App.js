@@ -3,7 +3,7 @@ import { Route, Routes, Navigate } from "react-router-dom";
 import "globals/bootstrap.scss";
 import "./App.scss";
 
-import { NavigationBar, Footer } from "app/components";
+import { NavigationBar } from "app/components";
 import { Apply, Home, Schedule, StarterPacks } from "app/views";
 
 function App() {
@@ -18,7 +18,6 @@ function App() {
 				{/* redirect to Home if route not found */}
 				<Route path="*" element={<Navigate to="/" />} />
 			</Routes>
-			<Footer />
 		</div>
 	);
 }
