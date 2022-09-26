@@ -3,6 +3,9 @@
 .home {
 	text-align: center;
 	min-height: 100vh;
+	background: url(../../../assets/images/background_terrain.png);
+	background-size: cover;
+	background-repeat: no-repeat;
 
 	section {
 		padding-bottom: 8rem;
