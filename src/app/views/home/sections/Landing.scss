@@ -86,32 +86,18 @@
 				flex-direction: column;
 				justify-content: center;
 				z-index: 3;
-				width: 80%;
-				height: 80%;
+				width: auto;
+				height: auto;
 
 				img {
 					height: 100%;
+					width: 100%;
 				}
 
 				:first-child {
 					position: absolute;
 					top: 20px;
 					animation: wobble 1.5s forwards, bounce 1s 1.5s infinite;
-				}
-
-				@media screen and (max-width: $break-large) {
-					width: 70%;
-					height: 70%;
-				}
-
-				@media screen and (max-width: $break-medium) {
-					height: 62.5%;
-					width: 62.5%;
-				}
-
-				@media screen and (max-width: $break-small) {
-					height: 35%;
-					width: 35%;
 				}
 			}
 
