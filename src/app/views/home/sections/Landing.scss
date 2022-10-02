@@ -1,14 +1,19 @@
+@use "globals/bootstrap";
 @import "globals/zothacks-styles.scss";
 
 .home {
 	.landing {
 		height: 100vh;
-		position: relative;
 		display: flex;
-		justify-content: space-between;
+		flex-direction: column-reverse;
 		align-items: center;
-		flex-direction: column;
-		text-align: left;
+		justify-content: center;
+
+		@include bootstrap.media-breakpoint-up(lg) {
+			flex-direction: row;
+		}
+
+		text-align: center;
 		color: white;
 		box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.1);
 		background: linear-gradient(
@@ -17,104 +22,24 @@
 			$darkPurpleBackground
 		);
 
-		.intro-wrapper {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			width: 100%;
-			height: calc(100% - 320px);
+		h1 {
+			@include bootstrap.font-size(5rem);
 		}
 
-		.schedule-nav {
-			position: absolute;
-			top: 0;
-			right: 0;
-			display: flex;
-			justify-content: flex-end;
-
-			a {
-				margin-right: 0 !important;
-				text-decoration: none;
-				display: flex;
-				align-items: center;
-
-				h5 {
-					margin-bottom: 0;
-					margin-left: 30px;
-				}
-			}
+		.landing-title {
+			padding: 2rem;
 		}
 
-		.schedule-button {
-			margin: 2em;
-			box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-		}
-
-		.title-info {
-			display: flex;
-			flex-direction: row;
-			margin-top: 15rem;
-
-			@media screen and (max-width: $break-large) {
-				h1 {
-					font-size: 70px;
-				}
-			}
-
-			@media screen and (max-width: $break-medium) {
-				flex-direction: column-reverse;
-				align-items: center;
-				text-align: center;
-				justify-content: center;
-				margin-top: 20rem;
-
-				h1 {
-					font-size: 60px;
-				}
-			}
-
-			.hero-wrapper {
-				display: flex;
-				flex-direction: column;
-				justify-content: center;
-				z-index: 3;
-			}
-
-			.jeep-wrapper {
-				position: relative;
-				display: flex;
-				flex-direction: column;
-				justify-content: center;
-				z-index: 3;
-				width: auto;
+		.jeep-wrapper {
+			img {
+				width: min(100%, calc(30rem + 10vw));
 				height: auto;
-
-				img {
-					height: 100%;
-					width: 100%;
-				}
-
-				:first-child {
-					position: absolute;
-					top: 20px;
-					animation: wobble 1.5s forwards, bounce 1s 1.5s infinite;
-				}
 			}
 
-			@media screen and (max-width: $break-small) {
-				.title-info {
-					width: 100vw;
-				}
-			}
-
-			div {
-				display: flex;
-				flex-direction: column;
-				justify-content: center;
-			}
-
-			h1 {
-				margin-bottom: 0.1em !important;
+			:first-child {
+				position: absolute;
+				top: 20px;
+				animation: wobble 1.5s forwards, bounce 1s 1.5s infinite;
 			}
 		}
 	}

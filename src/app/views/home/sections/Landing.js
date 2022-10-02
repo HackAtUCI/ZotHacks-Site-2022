@@ -11,23 +11,19 @@ const APPLICATION_URL =
 
 function Landing() {
 	return (
-		<section className="landing">
-			<div className="intro-wrapper">
-				<div className="title-info">
-					<Fade duration={1000} left>
-						<div className="jeep-wrapper">
-							<img src={jeepBody} alt="Jeep's Body"/>
-							<img src={jeepWheels} alt="Jeep's Wheels"/>
-						</div>
-					</Fade>
-					<Fade duration={1000} right>
-						<div className="hero-wrapper">
-							<h1 className="glow">ZotHacks</h1>
-							<span className="h3">November 20-21, 2021</span>
-						</div>
-					</Fade>
+		<section className="container landing">
+			<Fade duration={1000} left>
+				<div className="jeep-wrapper">
+					<img src={jeepBody} alt="Jeep's Body" />
+					<img src={jeepWheels} alt="Jeep's Wheels" />
 				</div>
-			</div>
+			</Fade>
+			<Fade duration={1000} right>
+				<div className="landing-title">
+					<h1 className="glow">ZotHacks</h1>
+					<span className="h3">November 20-21, 2021</span>
+				</div>
+			</Fade>
 		</section>
 	);
 }
