@@ -5,7 +5,6 @@ HackUCI environment styles.
 When graphics gives us their style guidelines we can look here.
 
 **/
-@import url("https://fonts.googleapis.com/css?family=Chakra+Petch");
 
 // PX Sizing for Media queries
 $break-small: 500px;
@@ -15,7 +14,6 @@ $break-large: 1300px;
 // Temporary Appwide Style Variables
 $fontColor: #2e2e2e;
 $errorColor: #a31e1e;
-$hackUCIFont: "Chakra Petch";
 
 // Backgrounds
 $darkBackground: #2e2e2e;
@@ -27,6 +25,10 @@ $blueGreenBackground: #2F9C95;
 $yellowGreenBackground: #ADD8AB;
 $lightPurpleBackground: #A23FD1;
 $darkPurpleBackground: #191970;
+$redBrownBackground: #882818;
+$orangeBrownBackground: #AF5D36;
+$greenBackground: #1D6C38;
+$lightBlueBackground: #43A3A9;
 
 // Gradients
 $leftGradient: #C6FFDD;
@@ -39,6 +41,9 @@ $white: #ffffff;
 $lightGray: #e8e8e8;
 $offWhite: #ededed;
 $pink: #ff8dcb;
+$brown: #5C3D0D;
+$tan: #FFE8AC;
+$black: #000000;
 
 // Animations
 @keyframes wobble {

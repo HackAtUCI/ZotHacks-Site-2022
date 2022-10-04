@@ -1,5 +1,7 @@
+@import "globals/zothacks-styles.scss";
+
 .footer {
-  background: linear-gradient(270deg, #191970 0%, #A23FD1 100%);
+  background: $redBrownBackground;
   padding-bottom: 60px;
 }
 

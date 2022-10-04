@@ -15,7 +15,7 @@ function Intro() {
 					computer science experience will learn to build their first CS
 					project. Through ZotHacks, we introduce these students to the world of
 					hackathons and web development by providing technical workshops,
-					strong mentorship, and virtual-friendly events!
+					strong mentorship, and free food!
 				</p>
 			</div>
 		</section>
