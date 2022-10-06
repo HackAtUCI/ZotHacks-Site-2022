@@ -46,14 +46,8 @@
 	.card {
 		color: $black;
 		width: 60vw;
-		background: linear-gradient(
-			to right,
-			$lightPurpleBackground,
-			$darkPurpleBackground
-		);
 		padding: 3rem;
 		border-radius: 1rem;
-		box-shadow: 0 30px 40px rgba(205, 106, 215, 0.54);
 		z-index: 1;
 
 		@media screen and (max-width: $break-small) {
