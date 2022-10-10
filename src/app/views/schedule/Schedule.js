@@ -1,6 +1,8 @@
 import React from "react"
 import "./Schedule.scss"
 
+import { Footer } from "app/components"
+
 import { scheduleData } from "../../../assets/data/schedule-data"
 import Countdown from "react-countdown"
 import pixels from "../../../assets/images/pixels.svg"
@@ -61,6 +63,7 @@ function Schedule() {
           )
         })}
       </section>
+      <Footer />
     </div>
   )
 }

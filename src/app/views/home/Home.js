@@ -2,7 +2,7 @@ import React from "react";
 import Fade from "react-reveal/Fade";
 import ReactTooltip from "react-tooltip";
 
-import { Blinkers } from "app/components";
+import { Blinkers, Footer } from "app/components";
 
 import Landing from "./sections/Landing";
 import Intro from "./sections/Intro";
@@ -29,6 +29,7 @@ function Home() {
 				<Sponsors />
 			</Fade>
 			<Faq />
+			<Footer />
 		</div>
 	);
 }

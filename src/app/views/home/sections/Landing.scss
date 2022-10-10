@@ -16,11 +16,6 @@
 		text-align: center;
 		color: white;
 		box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.1);
-		background: linear-gradient(
-			to right,
-			$lightPurpleBackground,
-			$darkPurpleBackground
-		);
 
 		h1 {
 			@include bootstrap.font-size(5rem);

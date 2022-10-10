@@ -1,6 +1,8 @@
 @import "globals/zothacks-styles.scss";
+@import "globals/zothacks-helper.scss";
 
 .home {
+	@include zothacks-background;
 	text-align: center;
 	min-height: 100vh;
 

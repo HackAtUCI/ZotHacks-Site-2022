@@ -1,6 +1,8 @@
 import React from "react"
 import "./StarterPacks.scss"
 
+import { Footer } from "app/components"
+
 import PinkStar from "../../../assets/images/pinkStar.svg";
 import BlueStar from "../../../assets/images/blueStar.svg";
 import ExternalLink from "../../containers/external-link/ExternalLink";
@@ -136,6 +138,7 @@ function StarterPacks() {
           </div>
 
       </section>
+      <Footer />
     </div>
   )
 }
