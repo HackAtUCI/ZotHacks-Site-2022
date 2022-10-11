@@ -2,7 +2,8 @@ import React from "react"
 import "./Schedule.scss"
 
 import { scheduleData } from "../../../assets/data/schedule-data"
-import Countdown from "react-countdown"
+// import Countdown from "react-countdown"
+import Countdown from '../../components/countdown/Countdown'
 import pixels from "../../../assets/images/pixels.svg"
 
 function Schedule() {
