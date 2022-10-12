@@ -12,27 +12,10 @@
     align-items: center;
   }
 
-  .nav-item {
-    margin: 1rem;
-  }
-
   .nav-link {
     font-size: 1.5rem;
     font-weight: 700;
     padding: 0.35rem 1rem;
-  }
-
-  .nav-link-outline {
-    border: 2px solid $pink;
-    border-radius: 0.5rem;
-    color: $pink;
-    transition: background-color 0.35s ease, color 0.35s ease;
-
-    &:hover,
-    &.active {
-      background-color: $pink;
-      color: $fontColor;
-    }
   }
 
   .navbar-logo {
