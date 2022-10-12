@@ -24,8 +24,12 @@
 		.landing-title {
 			padding: 2rem;
 			display: flex;
-			align-items: center;
+			align-items: flex-start;
 			flex-direction: column;
+
+			@media screen and (max-width: $break-medium) {
+				align-items: center;
+			}
 		}
 
 		.jeep-wrapper {
@@ -48,10 +52,10 @@
 		.apply-button {
 			background: $lightBlueBackground;
 			color: white;
-			font-size: 2rem;
+			font-size: 1.5rem;
 			border-radius: 10px;
-			height: 4rem;
-			width: 9rem;
+			height: 3.5rem;
+			width: 8rem;
 			box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.6);
 		}
 	}
