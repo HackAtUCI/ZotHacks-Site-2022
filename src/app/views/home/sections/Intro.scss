@@ -25,6 +25,12 @@
 		}
 	}
 
+	@media only screen and (max-width: 400px) {
+		.intro .card p {
+			width: auto;
+		}
+	}
+
 	@media only screen and (max-width: 900px) {
 		.intro .card{
 			width: 75vw;
@@ -38,32 +44,19 @@
 			width: 90vh;
 
 			position: absolute;
-			background-image: url('../../../../assets/images/scroll_light_medium.png');
+			background-image: url('../../../../assets/images/scroll_NEW_light.png');
 			background-position: center;
 			background-repeat: no-repeat;
 			background-size: contain;
-			transform: rotate(90deg) translate(7.5vw, 3vw);
+			transform: rotate(90deg) translate(7.5vw, 1vw);
 		}
 	}
 	@media only screen and (min-width: 901px) {
 		.intro .card {
-			background-image: url('../../../../assets/images/scroll_light_medium.png');
+			background-image: url('../../../../assets/images/scroll_NEW_light.png');
 			background-position: center;
 			background-repeat: no-repeat;
 			background-size: contain;
-		}
-	}
-	@media only screen and (min-width: 901px) and (max-width: $break-medium) {
-		.mentor-information {
-			align-items: start;
-		}
-		
-		.mentors .card {
-			width: 90vw;
-			
-			p {
-				text-align: left;
-			}
 		}
 	}
 }
