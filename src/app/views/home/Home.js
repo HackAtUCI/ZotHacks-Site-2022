@@ -7,7 +7,7 @@ import { Blinkers, Footer } from "app/components";
 import Landing from "./sections/Landing";
 import Intro from "./sections/Intro";
 import Mentors from "./sections/Mentors";
-import Sponsors from "./sections/Sponsors";
+// import Sponsors from "./sections/Sponsors";
 import Faq from "./sections/Faq";
 
 import "./Home.scss";
@@ -25,9 +25,9 @@ function Home() {
 			<Fade duration={1000}>
 				<Mentors />
 			</Fade>
-			<Fade duration={1000}>
+			{/* <Fade duration={1000}>
 				<Sponsors />
-			</Fade>
+			</Fade> */}
 			<Faq />
 			<Footer />
 		</div>
