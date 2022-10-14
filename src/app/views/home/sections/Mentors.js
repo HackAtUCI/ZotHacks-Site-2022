@@ -6,6 +6,9 @@ import mentorButton from "assets/images/mentorButton.png";
 
 import "./Mentors.scss";
 
+const MENTOR_APPLICATION_URL =
+	"https://airtable.com/shr5B94rQ66KWH3Iw";
+
 function Mentors() {
 	return (
 		<section className="mentors">
@@ -17,24 +20,15 @@ function Mentors() {
 						Have hackathon experience and would love to share it with new
 						developers? Apply to be a mentor for ZotHacks 2022!
 					</p>
-					<Link
-						className="apply-button-wrapper"
-						to={{ pathname: "https://airtable.com/shrbPw3zLgnVZkMkA" }}
+					<a
+						href={MENTOR_APPLICATION_URL}
 						target="_blank"
+						rel="noreferrer"
 						data-place="bottom"
-						data-tip="Make sure to use your UCI email!"
+                        data-tip="Make sure to use your UCI email!"
 					>
-						<img
-							type="image"
-							className="apply-button"
-							style={{
-								height: "70px",
-								width: "auto",
-								marginTop: "0.5rem",
-							}}
-							src={mentorButton}
-						/>
-					</Link>
+						<button className="mentor-apply-button">APPLY TO BE A MENTOR</button>
+					</a>
 				</div>
 			</div>
 		</section>
