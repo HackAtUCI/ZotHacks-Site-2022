@@ -18,4 +18,4 @@ function Apply() {
     );
 }
 
-export default Apply;
+export { Apply as default, APPLICATION_URL };

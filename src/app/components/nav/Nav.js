@@ -10,8 +10,7 @@ import zothacksLogo from "assets/icons/zothacks-logo.svg";
 
 import "./Nav.scss";
 
-const APPLICATION_URL =
-	"https://docs.google.com/forms/d/e/1FAIpQLSfNpsv-oSYvlQQBYC1Gj1Z3xURWDPoKd5-nM-b89aUMGzRiOw/viewform";
+import { APPLICATION_URL } from "app/views/apply/Apply";
 
 function NavigationBar() {
 	return (

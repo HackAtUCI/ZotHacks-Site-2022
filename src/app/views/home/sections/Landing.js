@@ -4,10 +4,9 @@ import Fade from "react-reveal/Fade";
 
 import "./Landing.scss";
 import jeepBody from "assets/images/jeep_body.png";
-import jeepWheels from "assets/images/jeep_wheels.png"
+import jeepWheels from "assets/images/jeep_wheels.png";
 
-const APPLICATION_URL =
-	"https://docs.google.com/forms/d/e/1FAIpQLSfNpsv-oSYvlQQBYC1Gj1Z3xURWDPoKd5-nM-b89aUMGzRiOw/viewform";
+import { APPLICATION_URL } from "app/views/apply/Apply";
 
 function Landing() {
 	return (
