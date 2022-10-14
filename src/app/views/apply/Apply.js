@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import "./Apply.scss";
 
 const APPLICATION_URL =
-    "https://docs.google.com/forms/d/e/1FAIpQLSdPhGwP7KUTcIa6rWsPlyCswlykZwR-dXCJo78Gxahy0Q3sTA/viewform";
+    "https://docs.google.com/forms/d/e/1FAIpQLSfNpsv-oSYvlQQBYC1Gj1Z3xURWDPoKd5-nM-b89aUMGzRiOw/viewform";
 
 function Apply() {
     useEffect(() => {
