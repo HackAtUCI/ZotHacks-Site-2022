@@ -23,14 +23,14 @@ function Landing() {
 					<h1 className="glow">ZotHacks</h1>
 					<span className="h3">November 20-21, 2021</span>
 					<a
-						className="apply-link"
+						className="btn apply-link"
 						href={APPLICATION_URL}
 						target="_blank"
 						rel="noreferrer"
 						data-place="bottom"
                         data-tip="Make sure to use your UCI email!"
 					>
-						<button className="apply-button">APPLY</button>
+						Apply
 					</a>
 				</div>
 			</Fade>

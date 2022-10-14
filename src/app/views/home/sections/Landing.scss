@@ -46,16 +46,10 @@
 		}
 
 		.apply-link {
+			@include bootstrap.button-variant($lightBlueBackground, $lightBlueBackground, white, $hover-color: white, $active-color: white);
+			@include bootstrap.button-size(0.5rem, 1.75rem, 1.5rem, 10px);
+			text-transform: uppercase;
 			margin-top: 2rem;
-		}
-
-		.apply-button {
-			background: $lightBlueBackground;
-			color: white;
-			font-size: 1.5rem;
-			border-radius: 10px;
-			height: 3.5rem;
-			width: 8rem;
 			box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.6);
 		}
 	}
