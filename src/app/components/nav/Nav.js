@@ -5,7 +5,7 @@ import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 
-import zothacksLogo from "assets/icons/zothacks-logo.svg";
+import { ReactComponent as ZothacksLogo} from "assets/icons/zothacks-logo.svg";
 
 import "./Nav.scss";
 
@@ -17,7 +17,7 @@ function NavigationBar() {
 		<Navbar id="app-navbar" expand="md" variant="dark">
 			<Container fluid>
 				<Navbar.Brand as={NavLink} end to="/">
-					<img className="navbar-logo" src={zothacksLogo} alt="ZotHacks Logo" />
+					<ZothacksLogo className="navbar-logo" fill="white"/>
 				</Navbar.Brand>
 				<Navbar.Toggle aria-controls="inner-navbar-nav" />
 				<Navbar.Collapse id="inner-navbar-nav">
