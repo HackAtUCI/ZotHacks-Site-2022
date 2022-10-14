@@ -7,8 +7,10 @@
 		align-items: center;
 		justify-content: space-between;
 		flex-direction: column;
-		background: $black;
-		opacity: 50%;
+		background: rgba(0, 0, 0, 0.5);
+		width: 80%;
+		margin: auto;
+		border-radius: 10px;
 
 		& > h2 {
 			width: 80vw;
