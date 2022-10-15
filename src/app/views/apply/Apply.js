@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 
 import "./Apply.scss";
 
-const APPLICATION_URL =
+export const APPLICATION_URL =
     "https://docs.google.com/forms/d/e/1FAIpQLSfNpsv-oSYvlQQBYC1Gj1Z3xURWDPoKd5-nM-b89aUMGzRiOw/viewform";
 
 function Apply() {
@@ -18,4 +18,4 @@ function Apply() {
     );
 }
 
-export { Apply as default, APPLICATION_URL };
+export default Apply;
