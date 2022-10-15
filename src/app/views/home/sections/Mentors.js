@@ -1,5 +1,6 @@
 import React from "react";
 
+import { PaperScroll } from "app/containers";
 import mentorship from "assets/images/mentorship.png";
 
 import "./Mentors.scss";
@@ -8,8 +9,8 @@ const MENTOR_APPLICATION_URL = "https://airtable.com/shr5B94rQ66KWH3Iw";
 
 function Mentors() {
 	return (
-		<section className="mentors">
-			<div className="card">
+		<section className="container mentors">
+			<PaperScroll>
 				<img
 					src={mentorship}
 					alt="A mentor at a hackathon helping a participant with coding"
@@ -31,7 +32,7 @@ function Mentors() {
 						Apply to be a Mentor
 					</a>
 				</div>
-			</div>
+			</PaperScroll>
 		</section>
 	);
 }

@@ -18,9 +18,9 @@ function Home() {
 			<ReactTooltip />
 
 			<Landing />
-			<Fade duration={1000}>
+			{/* <Fade duration={1000}> */}
 				<Intro />
-			</Fade>
+			{/* </Fade> */}
 			<Fade duration={1000}>
 				<Mentors />
 			</Fade>

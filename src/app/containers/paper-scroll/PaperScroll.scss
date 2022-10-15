@@ -1,0 +1,76 @@
+@use "globals/bootstrap";
+@import "globals/zothacks-styles";
+
+.paper-scroll-card {
+	position: relative; // critical in absolutely positioning scroll edges
+
+	&:before,
+	&:after {
+		content: "";
+		position: absolute;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+
+	&:before {
+		background-image: url("/assets/graphics/scroll_light_left.png");
+		background-position: 100% center;
+	}
+
+	&:after {
+		background-image: url("/assets/graphics/scroll_light_right.png");
+		background-position: 0% center;
+	}
+
+	@include bootstrap.media-breakpoint-down(md) {
+		&:before,
+		&:after {
+			transform: rotate(90deg);
+			padding: 50%;
+		}
+		&:before {
+			bottom: 100%;
+			left: 0;
+		}
+
+		&:after {
+			top: 100%;
+			right: 0;
+		}
+	}
+	@include bootstrap.media-breakpoint-up(md) {
+		width: 85%;
+		// can be any sufficiently large width, may need to be increased for tall cards
+		&:before,
+		&:after {
+			width: 20%;
+			height: 100%;
+		}
+		&:before {
+			top: 0;
+			right: 100%;
+		}
+		&:after {
+			top: 0;
+			left: 100%;
+		}
+	}
+
+	.card-body {
+		padding: 5rem 1rem;
+		border: solid hsl(21, 66%, 24%);
+		@include bootstrap.media-breakpoint-down(md) {
+			border-width: 0 calc(0.8px + 0.4vw);
+			margin-left: 1.25rem;
+		}
+		@include bootstrap.media-breakpoint-up(md) {
+			border-width: 3.5px 0;
+			margin-bottom: 1.25rem;
+		}
+
+		background-image: url("/assets/graphics/scroll_light_texture.jpg");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+}

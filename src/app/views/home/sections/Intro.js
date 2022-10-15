@@ -1,13 +1,14 @@
 import React from "react";
 
+import { PaperScroll } from "app/containers";
 import zothacksLogo from "assets/icons/zothacks-logo.svg";
 
 import "./Intro.scss";
 
 function Intro() {
 	return (
-		<section className="intro">
-			<div className="card">
+		<section className="container intro">
+			<PaperScroll>
 				<img className="zothacks-logo" src={zothacksLogo} alt="ZotHacks Logo" />
 				<h2>What is ZotHacks?</h2>
 				<p className="card-text">
@@ -17,7 +18,7 @@ function Intro() {
 					hackathons and web development by providing technical workshops,
 					strong mentorship, and free food!
 				</p>
-			</div>
+			</PaperScroll>
 		</section>
 	);
 }
