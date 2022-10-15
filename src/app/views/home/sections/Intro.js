@@ -8,7 +8,7 @@ function Intro() {
 	return (
 		<section className="intro">
 			<div className="card">
-				<img className="zothacks-logo" src={zothacksLogo} />
+				<img className="zothacks-logo" src={zothacksLogo} alt="ZotHacks Logo" />
 				<h2>What is ZotHacks?</h2>
 				<p className="card-text">
 					ZotHacks is a beginner-friendly hackathon where students with minimal

@@ -19,8 +19,8 @@ function Landing() {
 			</Fade>
 			<Fade duration={1000} right>
 				<div className="landing-title">
-					<h1 className="glow">ZotHacks</h1>
-					<span className="h3">November 20-21, 2021</span>
+					<h1>ZotHacks</h1>
+					<span className="h3">November 5&ndash;6, 2022</span>
 					<a
 						className="btn apply-link"
 						href={APPLICATION_URL}

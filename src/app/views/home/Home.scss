@@ -37,23 +37,14 @@
 		}
 	}
 
-	.glow {
-		color: #fff;
-		text-align: center;
-		text-shadow: 0 0 50px #fff;
-	}
-
 	.card {
 		color: $black;
 		width: 60vw;
-		background: linear-gradient(
-			to right,
-			$lightPurpleBackground,
-			$darkPurpleBackground
-		);
+		// temporary color for scroll design
+		background-color: rgb(227, 192, 147);
 		padding: 3rem;
 		border-radius: 1rem;
-		box-shadow: 0 30px 40px rgba(205, 106, 215, 0.54);
+		// box-shadow: 0 30px 40px rgba(222, 194, 141, 0.54);
 		z-index: 1;
 
 		@media screen and (max-width: $break-small) {
@@ -61,10 +52,6 @@
 			text-align: center;
 			padding: 1.7rem;
 			padding-top: 2rem;
-		}
-
-		@media screen and (max-width: $break-medium) {
-			margin-top: 5rem;
 		}
 
 		h2 {
