@@ -10,7 +10,10 @@ function Mentors() {
 	return (
 		<section className="mentors">
 			<div className="card">
-				<img src={mentorship} />
+				<img
+					src={mentorship}
+					alt="A mentor at a hackathon helping a participant with coding"
+				/>
 				<div className="mentor-information">
 					<h2>Interested in becoming a mentor?</h2>
 					<p className="card-text">

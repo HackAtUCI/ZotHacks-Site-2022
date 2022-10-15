@@ -4,7 +4,12 @@ import "globals/bootstrap.scss";
 import "./App.scss";
 
 import { NavigationBar } from "app/components";
-import { Apply, Home, Schedule, StarterPacks } from "app/views";
+import {
+	Apply,
+	Home,
+	// Schedule,
+	// StarterPacks
+} from "app/views";
 
 function App() {
 	return (
