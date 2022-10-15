@@ -23,6 +23,13 @@
 
 		.landing-title {
 			padding: 2rem;
+			display: flex;
+			align-items: flex-start;
+			flex-direction: column;
+
+			@media screen and (max-width: $break-medium) {
+				align-items: center;
+			}
 		}
 
 		.jeep-wrapper {
@@ -36,6 +43,14 @@
 				top: 20px;
 				animation: wobble 1.5s forwards, bounce 1s 1.5s infinite;
 			}
+		}
+
+		.apply-link {
+			@include bootstrap.button-variant($lightBlueBackground, $lightBlueBackground, white, $hover-color: white, $active-color: white);
+			@include bootstrap.button-size(0.5rem, 1.75rem, 1.5rem, 10px);
+			text-transform: uppercase;
+			margin-top: 2rem;
+			box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.6);
 		}
 	}
 }

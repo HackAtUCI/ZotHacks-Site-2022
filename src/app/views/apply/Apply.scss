@@ -6,7 +6,6 @@
   flex-direction: column;
   justify-content: center;
   color: white;
-  background: linear-gradient(180deg, $lightPurpleBackground, $darkPurpleBackground);
 
   &~.footer {
     background: $darkPurpleBackground;

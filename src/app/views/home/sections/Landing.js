@@ -4,10 +4,9 @@ import Fade from "react-reveal/Fade";
 
 import "./Landing.scss";
 import jeepBody from "assets/images/jeep_body.png";
-import jeepWheels from "assets/images/jeep_wheels.png"
+import jeepWheels from "assets/images/jeep_wheels.png";
 
-const APPLICATION_URL =
-	"https://docs.google.com/forms/d/e/1FAIpQLSdPhGwP7KUTcIa6rWsPlyCswlykZwR-dXCJo78Gxahy0Q3sTA/viewform";
+import { APPLICATION_URL } from "app/views/apply/Apply";
 
 function Landing() {
 	return (
@@ -22,6 +21,16 @@ function Landing() {
 				<div className="landing-title">
 					<h1 className="glow">ZotHacks</h1>
 					<span className="h3">November 20-21, 2021</span>
+					<a
+						className="btn apply-link"
+						href={APPLICATION_URL}
+						target="_blank"
+						rel="noreferrer"
+						data-place="bottom"
+                        data-tip="Make sure to use your UCI email!"
+					>
+						Apply
+					</a>
 				</div>
 			</Fade>
 		</section>

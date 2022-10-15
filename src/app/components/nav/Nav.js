@@ -4,13 +4,14 @@ import { NavLink } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
+import ExternalLinkIcon from "assets/images/externalLink.svg";
+
 
 import zothacksLogo from "assets/icons/zothacks-logo.svg";
 
 import "./Nav.scss";
 
-const APPLICATION_URL =
-	"https://docs.google.com/forms/d/e/1FAIpQLSdPhGwP7KUTcIa6rWsPlyCswlykZwR-dXCJo78Gxahy0Q3sTA/viewform";
+import { APPLICATION_URL } from "app/views/apply/Apply";
 
 function NavigationBar() {
 	return (
@@ -25,13 +26,12 @@ function NavigationBar() {
 						<NavLinkItem end to="/">
 							Home
 						</NavLinkItem>
-						<NavLinkItem to="/starter-packs">Resources</NavLinkItem>
-						<NavLinkItem to="/schedule">Schedule</NavLinkItem>
-						{/*<NavLinkItem to={{ pathname: APPLICATION_URL }}*/}
-						{/*             target="_blank"*/}
-						{/*             className="nav-link-outline">*/}
-						{/*    Apply*/}
-						{/*</NavLinkItem>*/}
+						{/* <NavLinkItem to="/starter-packs">Resources</NavLinkItem> */}
+						{/* <NavLinkItem to="/schedule">Schedule</NavLinkItem> */}
+						<NavLinkItem as="a" href={APPLICATION_URL} target="_blank" rel="noreferrer" style={{ color: "white"}}>
+							Apply
+							<img className="external-link-icon" src={ExternalLinkIcon} alt="external link" />
+						</NavLinkItem>
 					</Nav>
 				</Navbar.Collapse>
 			</Container>
