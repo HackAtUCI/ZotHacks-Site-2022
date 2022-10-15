@@ -3,7 +3,7 @@
 
 .home {
 	.landing {
-		height: 100vh;
+		height: calc(100vh + 101.2px); // height of navbar used to center the jeep
 		display: flex;
 		flex-direction: column-reverse;
 		align-items: center;
@@ -26,16 +26,25 @@
 		}
 
 		.jeep-wrapper {
+			width: min(100%, calc(30rem + 10vw));
+			height: auto;
+
 			img {
-				width: min(100%, calc(30rem + 10vw));
-				height: auto;
+				max-width: 100%;
+				max-height: 100%;
 			}
 
 			:first-child {
 				position: absolute;
-				top: 20px;
+				top: -42%;
 				animation: wobble 1.5s forwards, bounce 1s 1.5s infinite;
+				max-width: 200%;
+				max-height: 200%;
 			}
+		}
+
+		@media screen and (min-width: 768px) {
+			height: calc(100vh + 66px);
 		}
 	}
 }
