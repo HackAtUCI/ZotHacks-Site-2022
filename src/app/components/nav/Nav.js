@@ -4,7 +4,8 @@ import { NavLink } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import ExternalLink from "../../containers/external-link/ExternalLink";
+import ExternalLinkIcon from "assets/images/externalLink.svg";
+
 
 import zothacksLogo from "assets/icons/zothacks-logo.svg";
 
@@ -27,8 +28,9 @@ function NavigationBar() {
 						</NavLinkItem>
 						{/* <NavLinkItem to="/starter-packs">Resources</NavLinkItem> */}
 						{/* <NavLinkItem to="/schedule">Schedule</NavLinkItem> */}
-						<NavLinkItem as="a" href={APPLICATION_URL} target="_blank" rel="noreferrer">
-							<ExternalLink text="Apply" />
+						<NavLinkItem as="a" href={APPLICATION_URL} target="_blank" rel="noreferrer" style={{ color: "white"}}>
+							Apply
+							<img className="external-link-icon" src={ExternalLinkIcon} alt="external link" />
 						</NavLinkItem>
 					</Nav>
 				</Navbar.Collapse>
