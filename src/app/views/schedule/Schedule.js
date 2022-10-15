@@ -53,7 +53,7 @@ function Schedule() {
               <h3>{schedule.day}</h3>
               {schedule.events.map(function (event, j) {
                 return (
-                  <div className="schedule-card-event">
+                  <div className="schedule-card-event" key={event.name}>
                     <span className="left-text">{event.name}</span>
                     <span className="right-text">{event.time}</span>
                   </div>
