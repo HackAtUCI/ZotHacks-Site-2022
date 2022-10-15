@@ -2,7 +2,7 @@ import React from "react";
 import Fade from "react-reveal/Fade";
 import ReactTooltip from "react-tooltip";
 
-import { Blinkers, Footer } from "app/components";
+import { Footer } from "app/components";
 
 import Landing from "./sections/Landing";
 import Intro from "./sections/Intro";
@@ -15,7 +15,6 @@ import "./Home.scss";
 function Home() {
 	return (
 		<div className="home">
-			<Blinkers blinkerCount={40} />
 			<ReactTooltip />
 
 			<Landing />
