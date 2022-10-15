@@ -10,10 +10,6 @@
   flex-direction: column;
   align-items: center;
 
-  h1 {
-    font-weight: 600;
-  }
-
   h2 {
     @media screen and (max-width: $break-medium) {
       font-size: 3rem;
@@ -52,7 +48,6 @@
       width:55vw;
       text-align: left;
       font-style: normal;
-      font-weight: bold;
       font-size: 10vw;
       padding-top: 11vh;
       color: $tan;
@@ -64,7 +59,6 @@
 
     .schedule-countdown-text {
       font-style: normal;
-      font-weight: normal;
       font-size: 1.5vw;
       color: $tan;
 
@@ -105,7 +99,6 @@
       h3 {
         color: $white;
         font-style: normal;
-        font-weight: bold;
       }
 
       .schedule-card-event {
