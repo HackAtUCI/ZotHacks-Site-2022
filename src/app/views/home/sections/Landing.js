@@ -27,7 +27,7 @@ function Landing() {
 						target="_blank"
 						rel="noreferrer"
 						data-place="bottom"
-                        data-tip="Make sure to use your UCI email!"
+						data-tip="Make sure to use your UCI email!"
 					>
 						Apply
 					</a>
