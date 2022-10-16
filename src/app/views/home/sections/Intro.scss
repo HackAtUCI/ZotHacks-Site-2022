@@ -1,14 +1,12 @@
 .home {
 	.intro {
+		margin: auto;
 		display: flex;
-		justify-content: center;
-		align-items: center;
 		flex-direction: column;
-		position: relative;
+		align-items: center;
 
 		.zothacks-logo {
 			width: 100px;
-			margin: 0 auto 2rem auto;
 			filter: brightness(0.2);
 		}
 	}

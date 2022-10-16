@@ -1,0 +1,166 @@
+@use "globals/bootstrap";
+@import "globals/zothacks-styles";
+
+.paper-scroll-card {
+	position: relative; // critical in absolutely positioning scroll edges
+	opacity: 1; // override React Reveal initial hidden
+
+	.scroll-edge-start,
+	.card-body,
+	.scroll-edge-end {
+		// inherit animation properties from React Reveal
+		animation-duration: inherit;
+		animation-delay: inherit;
+		animation-iteration-count: inherit;
+		// Since animation class isn't included on load, initial configurations must be specified
+		// but final state should be maintained after animation
+		animation-fill-mode: forwards;
+	}
+
+	.scroll-edge-start,
+	.scroll-edge-end {
+		position: absolute;
+		background-size: contain;
+		background-repeat: no-repeat;
+		z-index: 1;
+	}
+
+	.scroll-edge-start {
+		background-image: url("/assets/graphics/scroll_light_left.png");
+		background-position: 100% center;
+	}
+
+	.scroll-edge-end {
+		background-image: url("/assets/graphics/scroll_light_right.png");
+		background-position: 0% center;
+	}
+
+	// vertical scroll design on narrower views
+	@include bootstrap.media-breakpoint-down(md) {
+		.scroll-edge-start,
+		.scroll-edge-end {
+			transform: rotate(90deg);
+			padding: 50%;
+			right: 0;
+		}
+		.scroll-edge-start {
+			bottom: 100%;
+		}
+		.scroll-edge-end {
+			top: 0%; // initially rolled up at the top
+		}
+	}
+
+	// horizontal scroll design on wider views
+	@include bootstrap.media-breakpoint-up(md) {
+		width: 85%; // decrease container width to account for scroll edges
+
+		.scroll-edge-start,
+		.scroll-edge-end {
+			// can be any sufficiently large width, may need to be increased for tall cards
+			width: 20%;
+			height: 100%;
+			top: 0;
+		}
+		.scroll-edge-start {
+			right: 50%; // initially rolled into center
+		}
+		.scroll-edge-end {
+			left: 50%; // initial rolled into center
+		}
+	}
+
+	.card-body {
+		padding: 5rem 1rem;
+		border: solid hsl(21, 66%, 24%);
+		@include bootstrap.media-breakpoint-down(md) {
+			border-width: 0 calc(0.8px + 0.4vw);
+			margin-left: 1.25rem;
+		}
+		@include bootstrap.media-breakpoint-up(md) {
+			border-width: 3.5px 0;
+			margin-bottom: 1.25rem;
+		}
+
+		background-image: url("/assets/graphics/scroll_light_texture.jpg");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+
+		// Masks are used to provide the unrolling animation
+		// The content inside the scroll edges is visible while the outside is hidden
+		mask-repeat: no-repeat;
+
+		@include bootstrap.media-breakpoint-up(md) {
+			mask-position: center;
+			mask-image: linear-gradient(
+				to right,
+				transparent 20%,
+				black 25%,
+				black 75%,
+				transparent 80%
+			);
+			mask-size: 0% 100%; // initial size before animation
+		}
+
+		@include bootstrap.media-breakpoint-down(md) {
+			mask-position: center 0; // expand from top to bottom
+			mask-image: linear-gradient(to bottom, black 50%, transparent 55%);
+			mask-size: 100% 0%; // initial size before animation
+		}
+	}
+}
+
+// React Reveal adds this className when the PaperScroll component becomes visible
+.unroll-scroll {
+	.card-body {
+		animation-name: unroll-scroll-horizontal;
+		@include bootstrap.media-breakpoint-down(md) {
+			animation-name: unroll-scroll-vertical;
+		}
+	}
+
+	.scroll-edge-start {
+		@include bootstrap.media-breakpoint-up(md) {
+			animation-name: unroll-scroll-left;
+		}
+	}
+
+	.scroll-edge-end {
+		animation-name: unroll-scroll-down;
+		@include bootstrap.media-breakpoint-up(md) {
+			animation-name: unroll-scroll-right;
+		}
+	}
+}
+
+// animation keyframes specify ending states since initial states are specified in styles
+@keyframes unroll-scroll-left {
+	100% {
+		right: 100%;
+	}
+}
+
+@keyframes unroll-scroll-right {
+	100% {
+		left: 100%;
+	}
+}
+
+@keyframes unroll-scroll-down {
+	100% {
+		top: 100%;
+	}
+}
+
+@keyframes unroll-scroll-horizontal {
+	100% {
+		mask-size: 200% 100%;
+	}
+}
+
+@keyframes unroll-scroll-vertical {
+	100% {
+		mask-size: 100% 200%;
+	}
+}
