@@ -1,5 +1,6 @@
 import React from "react";
 
+import { Link } from "react-router-dom";
 import Fade from "react-reveal/Fade";
 
 import "./Landing.scss";
@@ -22,6 +23,15 @@ function Landing() {
 				<div className="landing-title">
 					<h1>ZotHacks</h1>
 					<span className="h3">November 5, 2022</span>
+					<Link
+						className="apply-link"
+						to={APPLICATION_URL}
+						target="_blank"
+						data-place="bottom"
+                        data-tip="Make sure to use your UCI email!"
+					>
+						<button className="apply-button">APPLY</button>
+					</Link>
 				</div>
 			</Fade>
 		</section>
