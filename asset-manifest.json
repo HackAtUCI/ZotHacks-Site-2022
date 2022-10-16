@@ -1,11 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.9b84b158.css",
-    "main.js": "/static/js/main.195d8abe.js",
+    "main.css": "/static/css/main.939244ba.css",
+    "main.js": "/static/js/main.e8f931be.js",
     "static/media/background_terrain.jpg": "/static/media/background_terrain.6143ef5cf724d08e21d0.jpg",
     "static/media/mentorship.png": "/static/media/mentorship.32779834761c687d39bf.png",
+    "static/media/jeep_body.png": "/static/media/jeep_body.604c5ec941692bd10796.png",
     "static/media/jeep_wheels.png": "/static/media/jeep_wheels.33041efdf93f126715d0.png",
-    "static/media/jeep_body.png": "/static/media/jeep_body.88ea003194677f8d8c1e.png",
+    "static/media/scroll_light_right.png": "/static/media/scroll_light_right.de6ae5674ac93678b63b.png",
+    "static/media/scroll_light_left.png": "/static/media/scroll_light_left.c598204f673ed30b765b.png",
+    "static/media/scroll_light_texture.jpg": "/static/media/scroll_light_texture.1202ec9f4850179f7b79.jpg",
     "static/media/pixels.svg": "/static/media/pixels.f9370ffa384e14da2a55eb905bda15db.svg",
     "static/media/zothacks-logo.svg": "/static/media/zothacks-logo.2f04ac4bf24cd8d9b77f3f717cc06e32.svg",
     "index.html": "/index.html",
@@ -17,11 +20,11 @@
     "static/media/mail_icon.svg": "/static/media/mail_icon.40209e9d86563a34bbd10b9319b59343.svg",
     "static/media/youtube_icon.svg": "/static/media/youtube_icon.b6b73bc65622565a86cedeeed8126608.svg",
     "static/media/facebook_icon.svg": "/static/media/facebook_icon.1afc609c4854855cda01cc96b6cbc892.svg",
-    "main.9b84b158.css.map": "/static/css/main.9b84b158.css.map",
-    "main.195d8abe.js.map": "/static/js/main.195d8abe.js.map"
+    "main.939244ba.css.map": "/static/css/main.939244ba.css.map",
+    "main.e8f931be.js.map": "/static/js/main.e8f931be.js.map"
   },
   "entrypoints": [
-    "static/css/main.9b84b158.css",
-    "static/js/main.195d8abe.js"
+    "static/css/main.939244ba.css",
+    "static/js/main.e8f931be.js"
   ]
 }
