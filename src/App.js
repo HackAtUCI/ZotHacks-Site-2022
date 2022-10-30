@@ -5,7 +5,7 @@ import "./App.scss";
 
 import { NavigationBar } from "app/components";
 import {
-	Apply,
+	// Apply,
 	Home,
 	// Schedule,
 	// StarterPacks
@@ -17,7 +17,7 @@ function App() {
 			<NavigationBar />
 			<Routes>
 				<Route path="/" element={<Home />} />
-				<Route path="/apply" element={<Apply />} />
+				{/*<Route path="/apply" element={<Apply />} /> */}
 				{/* <Route path="/schedule" element={<Schedule />} /> */}
 				{/* <Route path="/starter-packs" element={<StarterPacks />} /> */}
 				{/* redirect to Home if route not found */}

@@ -28,10 +28,12 @@ function NavigationBar() {
 						</NavLinkItem>
 						{/* <NavLinkItem to="/starter-packs">Resources</NavLinkItem> */}
 						{/* <NavLinkItem to="/schedule">Schedule</NavLinkItem> */}
+						{/*
 						<NavLinkItem as="a" href={APPLICATION_URL} target="_blank" rel="noreferrer" style={{ color: "white"}}>
 							Apply
 							<img className="external-link-icon" src={ExternalLinkIcon} alt="external link" />
 						</NavLinkItem>
+						*/}
 					</Nav>
 				</Navbar.Collapse>
 			</Container>
