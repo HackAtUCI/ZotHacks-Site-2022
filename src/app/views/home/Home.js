@@ -6,7 +6,7 @@ import { Footer } from "app/components";
 
 import Landing from "./sections/Landing";
 import Intro from "./sections/Intro";
-import Mentors from "./sections/Mentors";
+// import Mentors from "./sections/Mentors";
 // import Sponsors from "./sections/Sponsors";
 import Faq from "./sections/Faq";
 

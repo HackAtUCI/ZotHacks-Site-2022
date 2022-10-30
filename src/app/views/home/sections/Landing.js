@@ -6,7 +6,7 @@ import "./Landing.scss";
 import jeepBody from "assets/images/jeep_body.png";
 import jeepWheels from "assets/images/jeep_wheels.png";
 
-import { APPLICATION_URL } from "app/views/apply/Apply";
+// import { APPLICATION_URL } from "app/views/apply/Apply";
 
 function Landing() {
 	return (

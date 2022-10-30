@@ -4,14 +4,14 @@ import { NavLink } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import ExternalLinkIcon from "assets/images/externalLink.svg";
+// import ExternalLinkIcon from "assets/images/externalLink.svg";
 
 
 import zothacksLogo from "assets/icons/zothacks-logo.svg";
 
 import "./Nav.scss";
 
-import { APPLICATION_URL } from "app/views/apply/Apply";
+// import { APPLICATION_URL } from "app/views/apply/Apply";
 
 function NavigationBar() {
 	return (
