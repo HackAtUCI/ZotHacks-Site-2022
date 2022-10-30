@@ -19,7 +19,7 @@ function Home() {
 
 			<Landing />
 			<Intro />
-			<Mentors />
+			{/* <Mentors /> */}
 			{/* <Fade duration={1000}>
 				<Sponsors />
 			</Fade> */}
