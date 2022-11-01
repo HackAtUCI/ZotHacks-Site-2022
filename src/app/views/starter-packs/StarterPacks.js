@@ -57,7 +57,7 @@ function StarterPacks() {
             <h4>Frontend Starter Code</h4>
             <p>A basic webpage built using HTML, CSS, and JavaScript.</p>
             <div className="resource-link">
-              <ExternalLink text="Frontend Example" to="https://github.com/derek-ye/frontend-demo"/>
+              <ExternalLink text="Frontend Example" to="https://github.com/HackAtUCI/zothacks-frontend-startercode"/>
             </div>
           </div>
 
