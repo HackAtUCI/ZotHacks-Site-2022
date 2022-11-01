@@ -20,7 +20,6 @@
   }
 
   h2 {
-    margin-top: 8rem;
     color: $tan;
   }
 
@@ -30,18 +29,21 @@
   }
 
   p {
-    text-align: left;
+    text-align: center;
   }
 
   section { 
     width: 60vw;
-    padding-bottom: 8rem;
+    padding-bottom: 4rem;
+  }
+
+  .resources-main-img {
+    margin-top: 4rem;
   }
 
   .resources-main-title {
     font-size: 8rem;
     text-shadow: 3px 3px 17px rgba(255, 255, 255, 0.4);
-    margin-top: 12rem;
   }
 
   .resource-title {
@@ -58,12 +60,40 @@
       padding: 0 20px;
     }
   }
+
+  .resource-border {
+    border-right: 1px solid white;
+    border-width: medium;
+  }
+
+  .resource-component {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 2rem;
+
+    h4 {
+      margin-top: 0px;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    .resource-link {
+      margin-top: auto;
+    }
+
+    .resource-link-2 {
+      margin-top: 10px;
+    }
+  }
 }
 
 @media screen and (max-width: 800px) {
   .StarterPacks {
     .resources-main-title {
-      margin-top: 8rem;
       font-size: 3.8rem;
     }
     section { 
@@ -75,7 +105,6 @@
 @media screen and (max-width: 440px) {
   .StarterPacks {
     .resources-main-title {
-      margin-top: 8rem;
       font-size: 3rem;
     }
     p {
