@@ -1,6 +1,6 @@
 @import "globals/zothacks-styles.scss";
 
-.StarterPacks {
+.Resources {
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -92,7 +92,7 @@
 }
 
 @media screen and (max-width: 800px) {
-  .StarterPacks {
+  .Resources {
     .resources-main-title {
       font-size: 3.8rem;
     }
@@ -103,7 +103,7 @@
 }
 
 @media screen and (max-width: 440px) {
-  .StarterPacks {
+  .Resources {
     .resources-main-title {
       font-size: 3rem;
     }
@@ -119,7 +119,7 @@
 }
 
 @media screen and (max-width: 350px) {
-  .StarterPacks {
+  .Resources {
     .resource-title img {
       display: none;
     }

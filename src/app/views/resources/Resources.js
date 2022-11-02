@@ -1,5 +1,5 @@
 import React from "react"
-import "./StarterPacks.scss"
+import "./Resources.scss"
 
 import { Footer } from "app/components"
 
@@ -7,9 +7,9 @@ import ExternalLink from "../../containers/external-link/ExternalLink";
 
 import resources_tools from "assets/images/resources_tools.png";
 
-function StarterPacks() {
+function Resources() {
   return (
-    <div className="StarterPacks">
+    <div className="Resources">
       <img className="resources-main-img" src={resources_tools} alt="Backpack and Tools" />
       <h2 className="resources-main-title">Resources</h2>
       <section id="api-resources">
@@ -156,4 +156,4 @@ function StarterPacks() {
   )
 }
 
-export default StarterPacks
+export default Resources
