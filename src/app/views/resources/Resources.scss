@@ -1,40 +1,21 @@
 @import "globals/zothacks-styles.scss";
 
 .Resources {
-  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: $white;
+  width: 60vw;
 
-  ul {
-    text-align: left;
-
-    li {
-      font-size: 1.2rem;
-    }
-
-    a {
-      color: #2053fc;
-    }
-  }
-
-  h2 {
-    color: $tan;
-  }
-
-  h4 {
-    text-align: left;
-    margin-top: 2rem;
-  }
-
-  p {
-    text-align: center;
-  }
-
-  section { 
-    width: 60vw;
+  section {
     padding-bottom: 4rem;
+  }
+
+  hr {
+    width: 60vw;
+    border-top: 3px solid white;
+    opacity: 1;
+    margin-bottom: 4rem;
   }
 
   .resources-main-img {
@@ -42,23 +23,14 @@
   }
 
   .resources-main-title {
+    color: $tan;
     font-size: 8rem;
-    text-shadow: 3px 3px 17px rgba(255, 255, 255, 0.4);
   }
 
   .resource-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    & img {
-      padding: 10px 0;
-    }
-    & h3 {
-      text-decoration: underline;
-      margin-bottom: 0 10px;
-      padding: 0 20px;
-    }
+    text-decoration: underline;
+    margin-bottom: 0 10px;
+    padding: 0 20px;
   }
 
   .resource-border {
@@ -70,16 +42,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    text-align: center;
     margin-top: 2rem;
-
-    h4 {
-      margin-top: 0px;
-    }
-
-    p {
-      text-align: center;
-    }
 
     .resource-link {
       margin-top: auto;
@@ -93,12 +56,16 @@
 
 @media screen and (max-width: 800px) {
   .Resources {
+    width: 90vw;
     .resources-main-title {
       font-size: 3.8rem;
     }
-    section { 
+    hr {
       width: 90vw;
     }
+    .resource-border {
+    border: none;
+  }
   }
 }
 
@@ -115,13 +82,9 @@
       margin-right: auto;
       font-size: 2rem;
     }
-  }
-}
 
-@media screen and (max-width: 350px) {
-  .Resources {
-    .resource-title img {
-      display: none;
+    h3 {
+        font-size: 1.5rem;
     }
   }
 }

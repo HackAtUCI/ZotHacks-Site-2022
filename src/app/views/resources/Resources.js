@@ -9,13 +9,11 @@ import resources_tools from "assets/images/resources_tools.png";
 
 function Resources() {
   return (
-    <div className="Resources">
+    <div className="Resources container">
       <img className="resources-main-img" src={resources_tools} alt="Backpack and Tools" />
-      <h2 className="resources-main-title">Resources</h2>
+      <h1 className="resources-main-title">Resources</h1>
       <section id="api-resources">
-        <div className="resource-title">
-          <h3>API Resources</h3>
-        </div>
+        <h2 className="resource-title">API Resources</h2>
         <p>
           An Application Programming Interface (API) is an interface or
           communication protocol that simplifies implementation and maintenance
@@ -24,7 +22,7 @@ function Resources() {
         </p>
         <div className="row">
           <div className="col-xs-1 col-md-6 resource-border resource-component">
-            <h4>Public-API List</h4>
+            <h3>Public-API List</h3>
             <p>Don't have an API in mind? Use Public-API to retrieve a random API to use for your project!</p>
             <div className="resource-link">
               <ExternalLink className="resource-link" text="Public-API" to="https://github.com/public-apis/public-apis" />
@@ -32,7 +30,7 @@ function Resources() {
           </div>
 
           <div className="col-xs-1 col-md-6 resource-component">
-            <h4>PeterPortal Public API</h4>
+            <h3>PeterPortal Public API</h3>
             <p>
               PeterPortal Public API provides software developers easy-access to UC
               Irvine's publicly available data such as: courses information, professor
@@ -42,11 +40,9 @@ function Resources() {
           </div>
         </div>
       </section>
-      <hr style={{ width: "60vw", borderTop: "3px solid white", opacity: "1", marginBottom: "4rem" }} />
+      <hr/>
       <section id="frontend-resources">
-        <div className="resource-title">
-          <h3>Frontend Resources</h3>
-        </div>
+        <h2 className="resource-title">Frontend Resources</h2>
         <p>
           Frontend web development is the practice of producing an interface for a website
           or web application that a user can see and interact with.
@@ -54,7 +50,7 @@ function Resources() {
         <div className="row">
           <div className="resource-component">
           {/* <div className="col-xs-1 col-md-6 resource-border resource-component"> */}
-            <h4>Frontend Starter Code</h4>
+            <h3>Frontend Starter Code</h3>
             <p>A basic webpage built using HTML, CSS, and JavaScript.</p>
             <div className="resource-link">
               <ExternalLink text="Frontend Example" to="https://github.com/HackAtUCI/zothacks-frontend-startercode"/>
@@ -68,11 +64,9 @@ function Resources() {
           </div> */}
         </div>
       </section>
-      <hr style={{ width: "60vw", borderTop: "3px solid white", opacity: "1", marginBottom: "4rem" }} />
+      <hr/>
       <section id="backend-resources">
-        <div className="resource-title">
-          <h3>Backend Resources</h3>
-        </div>
+        <h2 className="resource-title">Backend Resources</h2>
         <p>
           Backend frameworks are functional code skeletons that allows you to
           build custom REST APIs on your own server to store data, perform
@@ -80,7 +74,7 @@ function Resources() {
         </p>
         <div className="row">
           <div className="col-xs-1 col-md-6 resource-border resource-component">
-            <h4>Backend Starter Code</h4>
+            <h3>Backend Starter Code</h3>
             <p>A basic backend application built using Python and Flask.</p>
             <div className="resource-link">
               <ExternalLink text="Simple Flask Example" to="https://github.com/hackuci/zothacks-backend-startercode"/>
@@ -88,7 +82,7 @@ function Resources() {
           </div>
 
           <div className="col-xs-1 col-md-6 resource-component">
-            <h4>Advanced Backend Code</h4>
+            <h3>Advanced Backend Code</h3>
             <p>
               This example further explores Flask and demonstrates
               how it can be used to connect with your own MongoDB database.
@@ -99,14 +93,12 @@ function Resources() {
           </div>
         </div>
       </section>
-      <hr style={{ width: "60vw", borderTop: "3px solid white", opacity: "1", marginBottom: "4rem" }} />
+      <hr/>
       <section id="other-resources">
-        <div className="resource-title">
-          <h3>Other Resources</h3>
-        </div>
+        <h2 className="resource-title">Other Resources</h2>
         <div className="row">
           <div className="col-xs-1 col-md-4 resource-border resource-component">
-            <h4>Git</h4>
+            <h3>Git</h3>
             <p>
               If you want to learn and test your git skills, check out this tutorial!
               Here you will find a walk through of the basic git commands and principles,
@@ -121,7 +113,7 @@ function Resources() {
           </div>
 
           <div className="col-xs-1 col-md-4 resource-border resource-component">
-            <h4>Postman</h4>
+            <h3>Postman</h3>
             <p>
               Simulate a frontend by interacting with your backend with
               REST requests. Extremely helpful for backend developers to allow
@@ -136,7 +128,7 @@ function Resources() {
           </div>
           
           <div className="col-xs-1 col-md-4 resource-component">
-            <h4>Ngrok</h4>
+            <h3>Ngrok</h3>
             <p>
               Generate a temporary public URL for your local backend.
               Easy backend deploying without having to use Heroku, AWS, or
