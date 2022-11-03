@@ -48,7 +48,7 @@ let scheduleData = [
       },
       {
         name: "Valorant Social",
-        time: "8:00 PM",
+        time: "7:30 PM",
       },
       {
         name: "Hacking Ends",
