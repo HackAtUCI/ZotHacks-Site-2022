@@ -61,7 +61,7 @@ let scheduleData = [
     events: [
       {
         name: "Check-in",
-        time: "10:00 AM",
+        time: "9:30 AM",
       },
       {
         name: "Project Expo",
@@ -69,7 +69,7 @@ let scheduleData = [
       },
       {
         name: "Closing Ceremony",
-        time: "12:00 PM",
+        time: "12:30 PM",
       }
     ],
   },
