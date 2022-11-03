@@ -1,28 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.c99135b6.css",
-    "main.js": "/static/js/main.d17bb63d.js",
+    "main.css": "/static/css/main.bcb75b3e.css",
+    "main.js": "/static/js/main.2183fec7.js",
     "static/media/background_terrain.jpg": "/static/media/background_terrain.6143ef5cf724d08e21d0.jpg",
     "static/media/jeep_body.png": "/static/media/jeep_body.604c5ec941692bd10796.png",
     "static/media/jeep_wheels.png": "/static/media/jeep_wheels.33041efdf93f126715d0.png",
     "static/media/scroll_light_right.png": "/static/media/scroll_light_right.de6ae5674ac93678b63b.png",
     "static/media/scroll_light_left.png": "/static/media/scroll_light_left.c598204f673ed30b765b.png",
     "static/media/scroll_light_texture.jpg": "/static/media/scroll_light_texture.1202ec9f4850179f7b79.jpg",
+    "static/media/resources_tools.svg": "/static/media/resources_tools.85ecc33f99e0842697968f7291ec8507.svg",
     "static/media/zothacks-logo.svg": "/static/media/zothacks-logo.2f04ac4bf24cd8d9b77f3f717cc06e32.svg",
     "index.html": "/index.html",
     "static/media/instagram_icon.svg": "/static/media/instagram_icon.6c767be165b3140c717580e07223a5ff.svg",
-    "static/media/blueStar.svg": "/static/media/blueStar.036a908dc0336e65df857245b3b43d78.svg",
-    "static/media/pinkStar.svg": "/static/media/pinkStar.e562f3a0ab375083b5e2b75d9a8d80c9.svg",
     "static/media/externalLink.svg": "/static/media/externalLink.e06855475e90ebcd99ddb31440173d05.svg",
     "static/media/linkedin_icon.svg": "/static/media/linkedin_icon.8ad89c8340c8fae9929336c09216702f.svg",
     "static/media/mail_icon.svg": "/static/media/mail_icon.40209e9d86563a34bbd10b9319b59343.svg",
     "static/media/youtube_icon.svg": "/static/media/youtube_icon.b6b73bc65622565a86cedeeed8126608.svg",
     "static/media/facebook_icon.svg": "/static/media/facebook_icon.1afc609c4854855cda01cc96b6cbc892.svg",
-    "main.c99135b6.css.map": "/static/css/main.c99135b6.css.map",
-    "main.d17bb63d.js.map": "/static/js/main.d17bb63d.js.map"
+    "main.bcb75b3e.css.map": "/static/css/main.bcb75b3e.css.map",
+    "main.2183fec7.js.map": "/static/js/main.2183fec7.js.map"
   },
   "entrypoints": [
-    "static/css/main.c99135b6.css",
-    "static/js/main.d17bb63d.js"
+    "static/css/main.bcb75b3e.css",
+    "static/js/main.2183fec7.js"
   ]
 }
