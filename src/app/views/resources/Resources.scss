@@ -1,0 +1,90 @@
+@import "globals/zothacks-styles.scss";
+
+.Resources {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $white;
+  width: 60vw;
+
+  section {
+    padding-bottom: 4rem;
+  }
+
+  hr {
+    width: 60vw;
+    border-top: 3px solid white;
+    opacity: 1;
+    margin-bottom: 4rem;
+  }
+
+  .resources-main-img {
+    margin-top: 10rem;
+  }
+
+  .resources-main-title {
+    color: $tan;
+    font-size: 8rem;
+  }
+
+  .resource-title {
+    text-decoration: underline;
+    margin-bottom: 0 10px;
+    padding: 0 20px;
+  }
+
+  .resource-border {
+    border-right: 1px solid white;
+    border-width: medium;
+  }
+
+  .resource-component {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+
+    .resource-link {
+      margin-top: auto;
+    }
+
+    .resource-link-2 {
+      margin-top: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .Resources {
+    width: 90vw;
+    .resources-main-title {
+      font-size: 3.8rem;
+    }
+    hr {
+      width: 90vw;
+    }
+    .resource-border {
+    border: none;
+  }
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .Resources {
+    .resources-main-title {
+      font-size: 3rem;
+    }
+    p {
+      font-size: 16px;
+    }
+    .resource-title {
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+  }
+}

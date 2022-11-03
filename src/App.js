@@ -7,8 +7,8 @@ import { NavigationBar } from "app/components";
 import {
 	// Apply,
 	Home,
+	Resources,
 	Schedule,
-	// StarterPacks
 } from "app/views";
 
 function App() {
@@ -18,8 +18,8 @@ function App() {
 			<Routes>
 				<Route path="/" element={<Home />} />
 				{/*<Route path="/apply" element={<Apply />} /> */}
+				<Route path="/resources" element={<Resources />} />
 				<Route path="/schedule" element={<Schedule />} />
-				{/* <Route path="/starter-packs" element={<StarterPacks />} /> */}
 				{/* redirect to Home if route not found */}
 				<Route path="*" element={<Navigate to="/" />} />
 			</Routes>
