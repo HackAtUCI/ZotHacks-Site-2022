@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.bcb75b3e.css",
+    "main.css": "/static/css/main.eb643ed8.css",
     "main.js": "/static/js/main.2183fec7.js",
     "static/media/background_terrain.jpg": "/static/media/background_terrain.6143ef5cf724d08e21d0.jpg",
     "static/media/jeep_body.png": "/static/media/jeep_body.604c5ec941692bd10796.png",
@@ -17,11 +17,11 @@
     "static/media/mail_icon.svg": "/static/media/mail_icon.40209e9d86563a34bbd10b9319b59343.svg",
     "static/media/youtube_icon.svg": "/static/media/youtube_icon.b6b73bc65622565a86cedeeed8126608.svg",
     "static/media/facebook_icon.svg": "/static/media/facebook_icon.1afc609c4854855cda01cc96b6cbc892.svg",
-    "main.bcb75b3e.css.map": "/static/css/main.bcb75b3e.css.map",
+    "main.eb643ed8.css.map": "/static/css/main.eb643ed8.css.map",
     "main.2183fec7.js.map": "/static/js/main.2183fec7.js.map"
   },
   "entrypoints": [
-    "static/css/main.bcb75b3e.css",
+    "static/css/main.eb643ed8.css",
     "static/js/main.2183fec7.js"
   ]
 }
