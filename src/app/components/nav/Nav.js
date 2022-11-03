@@ -27,7 +27,7 @@ function NavigationBar() {
 							Home
 						</NavLinkItem>
 						{/* <NavLinkItem to="/starter-packs">Resources</NavLinkItem> */}
-						{/* <NavLinkItem to="/schedule">Schedule</NavLinkItem> */}
+						<NavLinkItem to="/schedule">Schedule</NavLinkItem>
 						{/*
 						<NavLinkItem as="a" href={APPLICATION_URL} target="_blank" rel="noreferrer" style={{ color: "white"}}>
 							Apply

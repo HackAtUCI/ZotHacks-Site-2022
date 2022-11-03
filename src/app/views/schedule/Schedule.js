@@ -4,12 +4,12 @@ import "./Schedule.scss"
 import { Footer } from "app/components"
 
 import { scheduleData } from "../../../assets/data/schedule-data"
-import Countdown from "react-countdown"
+import Countdown from '../../components/countdown/Countdown'
 import pixels from "../../../assets/images/pixels.svg"
 
 function Schedule() {
-  let hackingBegins = "13 Nov 2022 11:00:00 PST"
-  let devpostSubmission = "13 Nov 2022 23:00:00 PST"
+  let hackingBegins = "5 Nov 2022 10:00:00 PDT"
+  let devpostSubmission = "5 Nov 2022 22:00:00 PDT"
 
   function generateCountdown() {
     if (Date.parse(hackingBegins) - Date.now() > 0) {
@@ -41,9 +41,6 @@ function Schedule() {
     <div className="Schedule">
       <div className="overlaying-div">
         {generateCountdown()}
-        <div className="schedule-pixels">
-          <img src={pixels} alt="pixels" />
-        </div>
       </div>
 
       <section id="schedule-cards">

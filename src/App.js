@@ -7,7 +7,7 @@ import { NavigationBar } from "app/components";
 import {
 	// Apply,
 	Home,
-	// Schedule,
+	Schedule,
 	// StarterPacks
 } from "app/views";
 
@@ -18,7 +18,7 @@ function App() {
 			<Routes>
 				<Route path="/" element={<Home />} />
 				{/*<Route path="/apply" element={<Apply />} /> */}
-				{/* <Route path="/schedule" element={<Schedule />} /> */}
+				<Route path="/schedule" element={<Schedule />} />
 				{/* <Route path="/starter-packs" element={<StarterPacks />} /> */}
 				{/* redirect to Home if route not found */}
 				<Route path="*" element={<Navigate to="/" />} />
