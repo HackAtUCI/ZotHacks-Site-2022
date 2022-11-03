@@ -5,7 +5,7 @@ import { Footer } from "app/components"
 
 import ExternalLink from "../../containers/external-link/ExternalLink";
 
-import resources_tools from "assets/images/resources_tools.png";
+import resources_tools from "assets/images/resources_tools.svg";
 
 function Resources() {
   return (
