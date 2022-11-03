@@ -1,14 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.0876a54f.css",
-    "main.js": "/static/js/main.3dece58c.js",
+    "main.css": "/static/css/main.c99135b6.css",
+    "main.js": "/static/js/main.d17bb63d.js",
     "static/media/background_terrain.jpg": "/static/media/background_terrain.6143ef5cf724d08e21d0.jpg",
     "static/media/jeep_body.png": "/static/media/jeep_body.604c5ec941692bd10796.png",
     "static/media/jeep_wheels.png": "/static/media/jeep_wheels.33041efdf93f126715d0.png",
     "static/media/scroll_light_right.png": "/static/media/scroll_light_right.de6ae5674ac93678b63b.png",
     "static/media/scroll_light_left.png": "/static/media/scroll_light_left.c598204f673ed30b765b.png",
     "static/media/scroll_light_texture.jpg": "/static/media/scroll_light_texture.1202ec9f4850179f7b79.jpg",
-    "static/media/pixels.svg": "/static/media/pixels.f9370ffa384e14da2a55eb905bda15db.svg",
     "static/media/zothacks-logo.svg": "/static/media/zothacks-logo.2f04ac4bf24cd8d9b77f3f717cc06e32.svg",
     "index.html": "/index.html",
     "static/media/instagram_icon.svg": "/static/media/instagram_icon.6c767be165b3140c717580e07223a5ff.svg",
@@ -19,11 +18,11 @@
     "static/media/mail_icon.svg": "/static/media/mail_icon.40209e9d86563a34bbd10b9319b59343.svg",
     "static/media/youtube_icon.svg": "/static/media/youtube_icon.b6b73bc65622565a86cedeeed8126608.svg",
     "static/media/facebook_icon.svg": "/static/media/facebook_icon.1afc609c4854855cda01cc96b6cbc892.svg",
-    "main.0876a54f.css.map": "/static/css/main.0876a54f.css.map",
-    "main.3dece58c.js.map": "/static/js/main.3dece58c.js.map"
+    "main.c99135b6.css.map": "/static/css/main.c99135b6.css.map",
+    "main.d17bb63d.js.map": "/static/js/main.d17bb63d.js.map"
   },
   "entrypoints": [
-    "static/css/main.0876a54f.css",
-    "static/js/main.3dece58c.js"
+    "static/css/main.c99135b6.css",
+    "static/js/main.d17bb63d.js"
   ]
 }
