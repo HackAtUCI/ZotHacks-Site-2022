@@ -22,18 +22,6 @@
     position: relative;
   }
 
-  .schedule-pixels {
-    margin-top: -11.5vh;
-
-    img {
-      width: 98vw;
-    }
-
-    @media screen and (max-width: $break-medium) {
-      margin-top: 0;
-    }
-  }
-
   #schedule-block {
     position: relative;
     display: flex;
@@ -45,7 +33,6 @@
     color: white;
 
     .schedule-countdown {
-      // width:55vw;
       text-align: left;
       font-style: normal;
       font-size: 150px;
@@ -70,7 +57,7 @@
   }
 
   #schedule-cards {
-    margin-top: 140px;
+    margin-top: 45vh;
     height: 100%;
     justify-content: center;
     align-items: center;
