@@ -5,7 +5,6 @@ import { Footer } from "app/components"
 
 import { scheduleData } from "../../../assets/data/schedule-data"
 import Countdown from '../../components/countdown/Countdown'
-import pixels from "../../../assets/images/pixels.svg"
 
 function Schedule() {
   let hackingBegins = "5 Nov 2022 10:00:00 PDT"
