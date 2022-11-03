@@ -45,9 +45,10 @@
     color: white;
 
     .schedule-countdown {
-      width:55vw;
+      // width:55vw;
       text-align: left;
       font-style: normal;
+      font-size: 150px;
       font-size: 10vw;
       padding-top: 11vh;
       color: $tan;
@@ -75,8 +76,7 @@
     align-items: center;
     width: 80%;
 
-    background: $black;
-    opacity: 0.5;
+    background: rgba(0, 0, 0, 0.5);
     margin-bottom: 80px;
     border-radius: 10px;
     @media screen and (max-width: $break-medium) {
@@ -84,7 +84,7 @@
     }
 
     .schedule-card {
-      padding: 2rem;
+      padding: 3rem;
       display: flex;
       flex-direction: column;
       margin-left: 2rem;
@@ -99,6 +99,7 @@
       h3 {
         color: $white;
         font-style: normal;
+        font-size: 3rem;
       }
 
       .schedule-card-event {
@@ -115,13 +116,13 @@
         .left-text {
           float: left;
           font-style: normal;
-          font-size: 1.5rem;
+          font-size: 1.75rem;
           color: $white;
         }
 
         .right-text {
           color: #ed96ca;
-          font-size: 20px;
+          font-size: 1.5rem;
           float: right;
         }
       }
