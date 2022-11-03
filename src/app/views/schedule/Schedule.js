@@ -8,7 +8,7 @@ import Countdown from '../../components/countdown/Countdown'
 import pixels from "../../../assets/images/pixels.svg"
 
 function Schedule() {
-  let hackingBegins = "5 Nov 2022 11:00:00 PST"
+  let hackingBegins = "5 Nov 2022 10:00:00 PST"
   let devpostSubmission = "5 Nov 2022 22:00:00 PST"
 
   function generateCountdown() {

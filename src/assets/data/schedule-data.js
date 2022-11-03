@@ -15,15 +15,15 @@ let scheduleData = [
         time: "9:45 AM",
       },
       {
+        name: "Hacking begins!",
+        time: "10:00 AM",
+      },
+      {
         name: "Design@UCI Workshop",
         time: "10:00 AM",
       },
       {
         name: "ICSSC Workshop",
-        time: "11:00 AM",
-      },
-      {
-        name: "Hacking begins!",
         time: "11:00 AM",
       },
       {
@@ -37,6 +37,10 @@ let scheduleData = [
       {
         name: "Maiss Workshop",
         time: "4:00 PM",
+      },
+      {
+        name: "Bob Ross Social Event",
+        time: "5:00 PM",
       },
       {
         name: "Dinner",
@@ -66,15 +70,7 @@ let scheduleData = [
       {
         name: "Closing Ceremony",
         time: "12:00 PM",
-      },
-      {
-        name: "HackNights Time",
-        time: "1:00 PM",
-      },
-      {
-        name: "ZotHacks Ends",
-        time: "3:00 PM",
-      },
+      }
     ],
   },
 ]
