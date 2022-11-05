@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 
-export const SUBMIT_URL= "https://zothacks-2022.devpost.com";
+export const DEVPOST_URL= "https://zothacks-2022.devpost.com";
 
 function Submit() {
     useEffect(() => {
         // redirect to ZotHacks Devpost
-        window.location.replace(SUBMIT_URL);
+        window.location.replace(DEVPOST_URL);
     }, []);
 
     return (

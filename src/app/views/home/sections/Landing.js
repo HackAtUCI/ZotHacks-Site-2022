@@ -5,7 +5,7 @@ import Fade from "react-reveal/Fade";
 import "./Landing.scss";
 import jeepBody from "assets/images/jeep_body.png";
 import jeepWheels from "assets/images/jeep_wheels.png";
-import { SUBMIT_URL } from "app/views/submit/Submit";
+import { DEVPOST_URL } from "app/views/submit/Submit";
 
 // import { APPLICATION_URL } from "app/views/apply/Apply";
 
@@ -36,13 +36,13 @@ function Landing() {
 					*/}
 					<a
 						className="btn apply-link"
-						href={SUBMIT_URL}
+						href={DEVPOST_URL}
 						target="_blank"
 						rel="noreferrer"
 						data-place="bottom"
 						data-tip="Click here to submit your project to the Devpost!"
 					>
-						Submit
+						Devpost	
 					</a>
 				</div>
 			</Fade>

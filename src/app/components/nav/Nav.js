@@ -12,7 +12,7 @@ import zothacksLogo from "assets/icons/zothacks-logo.svg";
 import "./Nav.scss";
 
 // import { APPLICATION_URL } from "app/views/apply/Apply";
-import { SUBMIT_URL } from "app/views/submit/Submit";
+import { DEVPOST_URL } from "app/views/submit/Submit";
 
 const REPORT_URL = "https://forms.gle/bb3Vie5PA8o2o7Wx5";
 
@@ -37,8 +37,8 @@ function NavigationBar() {
 							<img className="external-link-icon" src={ExternalLinkIcon} alt="external link" />
 						</NavLinkItem>
 						*/}
-						<NavLinkItem as="a" href={SUBMIT_URL} target="_blank" rel="noreferrer" style={{ color: "white" }}>
-							Submit
+						<NavLinkItem as="a" href={DEVPOST_URL} target="_blank" rel="noreferrer" style={{ color: "white" }}>
+							Devpost	
 							<img className="external-link-icon" src={ExternalLinkIcon} alt="external link to Devpost" />
 						</NavLinkItem>
 						<NavLinkItem as="a" href={REPORT_URL} target="_blank" rel="noreferrer" style={{ color: "white" }}>
