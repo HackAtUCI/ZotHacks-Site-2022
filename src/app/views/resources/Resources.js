@@ -48,8 +48,7 @@ function Resources() {
           or web application that a user can see and interact with.
         </p>
         <div className="row">
-          <div className="resource-component">
-          {/* <div className="col-xs-1 col-md-6 resource-border resource-component"> */}
+          <div className="col-xs-1 col-md-6 resource-border resource-component">
             <h3>Frontend Starter Code</h3>
             <p>A basic webpage built using HTML, CSS, and JavaScript.</p>
             <div className="resource-link">
@@ -57,11 +56,16 @@ function Resources() {
             </div>
           </div>
 
-          {/* <div className="col-xs-1 col-md-6 resource-component">
-            <h4>React Starter Code</h4>
-            <p>Learn how to use React, a Javascript library for building user interfaces.</p>
-            <ExternalLink text="React Example" to="https://github.com/hackuci/zothacks-2020-frontend" />
-          </div> */}
+          <div className="col-xs-1 col-md-6 resource-component">
+            <h3>Hack Frontend Workshop</h3>
+            <p>Learn about basic web development using HTML, CSS, and Vanilla JavaScript!</p>
+            <div className="resource-link">
+              <ExternalLink text="Workshop Code" to="https://github.com/RandyHuynh5815/vanilla-js-workshop"/>
+            </div>
+            <div className="resource-link-2">
+              <ExternalLink text="Workshop Recording" to="https://drive.google.com/file/d/15y8sss69kVOvaE38idujRrdOKZNiTUY8/view"/>
+            </div>
+          </div>
         </div>
       </section>
       <hr/>
