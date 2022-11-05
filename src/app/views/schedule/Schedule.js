@@ -5,6 +5,7 @@ import { Footer } from "app/components"
 
 import { scheduleData } from "../../../assets/data/schedule-data"
 import Countdown from '../../components/countdown/Countdown'
+import ScheduleCollapse from "app/containers/schedule-collapse/ScheduleCollapse"
 
 function Schedule() {
   let hackingBegins = "5 Nov 2022 10:00:00 PDT"
@@ -49,10 +50,12 @@ function Schedule() {
               <h3>{schedule.day}</h3>
               {schedule.events.map(function (event, j) {
                 return (
-                  <div className="schedule-card-event" key={event.name}>
-                    <span className="left-text">{event.name}</span>
-                    <span className="right-text">{event.time}</span>
-                  </div>
+                  <ScheduleCollapse
+                    name={event.name}
+                    time={event.time}
+                    description={event.description}
+                    link={event.link}
+							    />
                 )
               })}
             </div>

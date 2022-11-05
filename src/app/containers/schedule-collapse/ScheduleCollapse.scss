@@ -1,0 +1,83 @@
+@import "globals/zothacks-styles.scss";
+
+.schedule-collapse {
+  text-align: left;
+  margin-bottom: 2rem;
+  color: white;
+
+  img {
+    height: 100%;
+    margin-top: 0.5rem;
+    cursor: pointer;
+    margin-left: 20px;
+  }
+
+  .description-wrapper {
+    display: flex;
+    flex-direction: row;
+    div {
+      width: 100%;
+    }
+  }
+
+  .description-wrapper p {
+    margin-top: 1rem;
+  }
+
+  .schedule-collapse-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+
+  .schedule-collapse-right {
+    display: flex;
+  }
+
+  h4 {
+    margin: 0;
+    font-size: 24px;
+    max-width: 80%;
+  }
+
+  p {
+    color: $tan;
+    width: 95%;
+    margin: auto;
+  }
+
+  a {
+    text-decoration: underline;
+    color: $lightBlueBackground;
+  }
+
+  a:hover {
+    color: $lightBlueBackground;
+  }
+}
+
+@media screen and (max-width: $break-medium) {
+  .schedule-collapse {
+    margin-bottom: 1.5rem;
+  }
+
+  .schedule-collapse-title h4 {
+    font-size: 1.25rem;
+  }
+
+  .schedule-collapse-title {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .schedule-collapse-right {
+    flex-basis: 100%;
+    justify-content: space-between;
+  }
+
+  .answer-wrapper p {
+    font-size: 1rem;
+  }
+}
