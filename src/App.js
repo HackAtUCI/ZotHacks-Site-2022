@@ -9,6 +9,7 @@ import {
 	Home,
 	Resources,
 	Schedule,
+	Submit
 } from "app/views";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
 				{/*<Route path="/apply" element={<Apply />} /> */}
 				<Route path="/resources" element={<Resources />} />
 				<Route path="/schedule" element={<Schedule />} />
+				<Route path="/submit" element={<Submit />} />
 				{/* redirect to Home if route not found */}
 				<Route path="*" element={<Navigate to="/" />} />
 			</Routes>
