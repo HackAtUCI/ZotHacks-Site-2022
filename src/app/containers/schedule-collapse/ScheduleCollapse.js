@@ -48,7 +48,7 @@ function ScheduleCollapse({ name, time, description, link }) {
                 opacity: 0,
               }}
             >
-              <p dangerouslySetInnerHTML={{ __html: description}}/>
+              <p>{description}</p>
             </motion.div>
           ) : null}
         </AnimatePresence>
