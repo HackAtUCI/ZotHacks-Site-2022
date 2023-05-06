@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+
+  # React
+  react:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: npx react-scripts start
+    ports:
+      - "127.0.0.1:3000:3000"
+    volumes:
+      - .:/react
+      - /react/node_modules
